@@ -1,27 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>4kingRAS</title>
+  <title>4kingRAS | sdu ee</title>
   
-  <subtitle>Memo</subtitle>
+  <subtitle>写点技术文章</subtitle>
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://4kingras.github.io/blog/"/>
-  <updated>2018-08-18T10:24:29.007Z</updated>
+  <updated>2018-08-18T15:14:44.165Z</updated>
   <id>http://4kingras.github.io/blog/</id>
   
   <author>
-    <name>WYL</name>
+    <name>4king</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
+    <title>Test-markdown</title>
+    <link href="http://4kingras.github.io/blog/2018/08/18/Test-markdown/"/>
+    <id>http://4kingras.github.io/blog/2018/08/18/Test-markdown/</id>
+    <published>2018-08-18T14:59:43.000Z</published>
+    <updated>2018-08-18T15:14:44.165Z</updated>
+    
+    <summary type="html">
+    
+      just test~
+    
+    </summary>
+    
+      <category term="default" scheme="http://4kingras.github.io/blog/categories/default/"/>
+    
+    
+      <category term="test" scheme="http://4kingras.github.io/blog/tags/test/"/>
+    
+      <category term="markdown" scheme="http://4kingras.github.io/blog/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World ！</title>
     <link href="http://4kingras.github.io/blog/2018/08/18/hello-world/"/>
     <id>http://4kingras.github.io/blog/2018/08/18/hello-world/</id>
     <published>2018-08-18T10:24:29.007Z</published>
-    <updated>2018-08-18T10:24:29.007Z</updated>
+    <updated>2018-08-18T14:56:14.772Z</updated>
     
     <summary type="html">
     
@@ -29,7 +51,7 @@
       
         
         
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+          &lt;h2 id=&quot;正式开始新的博客&quot;&gt;&lt;a href=&quot;#正式开始新的博客&quot; class=&quot;headerlink&quot;
         
       
     
