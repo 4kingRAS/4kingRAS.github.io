@@ -46,6 +46,9 @@
     <link rel="stylesheet" type="text/css" href="/blog/css/sidebar.css">
     
     
+<link rel="stylesheet" type="text/css" href="/blog/css/page.css">
+<link rel="stylesheet" type="text/css" href="/blog/css/post.css">
+
     <link rel="stylesheet" type="text/css" href="/blog/css/custom.css">
     <link rel="stylesheet" type="text/css" href="/blog/css/atom-one-dark.css">
     <link rel="stylesheet" type="text/css" href="/blog/css/lightgallery.min.css">
@@ -79,7 +82,7 @@
     <script defer type="text/javascript" src="/blog/js/index.js"></script>
     
     <script defer type="text/javascript" src="/blog/js/custom.js"></script>
-    <title>4kingRAS | SDU | EE | Fin - 写点技术文章</title>
+    <title>test markdown | 4kingRAS | SDU | EE | Fin - 写点技术文章</title>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN"  data-spy="scroll" data-target=".list-group">
     
@@ -118,25 +121,22 @@
         <div class="main-container">
           <div class="content">
             
-
-<div id="index" class="index">
+<div id="post" class="post">
   
-  <article class="index-article card" itemscope itemtype="http://schema.org/Article">
+  <article class="post-article card" itemscope itemtype="http://schema.org/Article">
     <div class="post-block">
       <link itemprop="mainEntityOfPage" href="http://4kingras.github.io/blog/blog/2018/08/18/test-markdown/">
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <meta itemprop="name" content="4king">
-        <meta itemprop="description" content="LESS TALK MORE WORK">
-        <meta itemprop="image" content="/blog/images/avatar.png">
+       <meta itemprop="name" content="4king">
+       <meta itemprop="description" content="LESS TALK MORE WORK">
+       <meta itemprop="image" content="/blog/images/avatar.png">
       </span>
       <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="4kingRAS | SDU | EE | Fin">
+       <meta itemprop="name" content="4kingRAS | SDU | EE | Fin">
       </span>
     </div>
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/blog/2018/08/18/test-markdown/" itemprop="url">test markdown</a>
-      </h1>
+      <h1 class="post-title" itemprop="name headline">test markdown</h1>
       <div class="post-meta">
         
         <span class="post-date">
@@ -156,9 +156,19 @@
       </div>
     </header>
     <main class="post-main" itemprop="articleBody">
-      
       <h1 id="1-hexo-搭建github-pages"><a href="#1-hexo-搭建github-pages" class="headerlink" title="1. hexo 搭建github pages"></a>1. hexo 搭建github pages</h1><p>简单记录一下步骤</p>
-      
+<a id="more"></a>
+<h2 id="1-1-github-pages申请"><a href="#1-1-github-pages申请" class="headerlink" title="1.1. github pages申请"></a>1.1. github pages申请</h2><p>就是申请xxxx.github.io的仓库，不过要注意jekyll需要分支为gh-pages，hexo只需要master、</p>
+<h2 id="1-2-hexo-搭建"><a href="#1-2-hexo-搭建" class="headerlink" title="1.2. hexo 搭建"></a>1.2. hexo 搭建</h2><p>在需要建博客的目录（无须进入io仓库）进入Git bash，然后</p>
+<figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs undefined">$ hexo init<br>$ hexo g<br></code></pre></td></tr></table></figure>
+<p>g生成后，在public里的就是博客的网页。<br>在_config,yml里这么安排，这样主页还能自定义。</p>
+<figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs undefined">url: http://4kingras.github.io/blog<br>root: /blog/<br></code></pre></td></tr></table></figure>
+<h2 id="1-3-github-部署"><a href="#1-3-github-部署" class="headerlink" title="1.3. github 部署"></a>1.3. github 部署</h2><p>配置好github的 ssh key， 然后先生成博客页面，复制到io仓库下，然后手动commit。</p>
+<p>最终的目录结构</p>
+<p><img src="/blog/2018/08/18/test-markdown/asset.png" alt="最终目录结构"></p>
+<h2 id="1-4-hexo写博客页面"><a href="#1-4-hexo写博客页面" class="headerlink" title="1.4. hexo写博客页面"></a>1.4. hexo写博客页面</h2><p>有几个坑，一是插入图片，<br>1 要先把配置文件<code>_config.yml</code>里的<code>post_asset_folder:</code>这个选项设置为<code>true</code><br>2 在你的hexo目录下执行这样一句话<code>npm install hexo-asset-image --save</code></p>
+<p>如果想增加read more效果 可以在指定位置加入<code>&lt;!--more--&gt;</code></p>
+
     </main>
     <footer class="post-footer">
       
@@ -176,61 +186,17 @@
     </footer>
   </article>
   
-  <article class="index-article card" itemscope itemtype="http://schema.org/Article">
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="http://4kingras.github.io/blog/blog/2018/08/18/hello-world/">
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <meta itemprop="name" content="4king">
-        <meta itemprop="description" content="LESS TALK MORE WORK">
-        <meta itemprop="image" content="/blog/images/avatar.png">
-      </span>
-      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="4kingRAS | SDU | EE | Fin">
-      </span>
-    </div>
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/blog/2018/08/18/hello-world/" itemprop="url">Hello World ！</a>
-      </h1>
-      <div class="post-meta">
-        
-        <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-08-18T17:35:31+08:00">2018-08-18 17:35:31</time></span>
-        </span>
-        
-        
-        
-        <span class="post-meta-divider divider">|</span>
-        
-        <span class="post-categories">
-          
-          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/default/" itemprop="url" rel="index"><span itemprop="name">default</span></a></span>
-        </span>
-        
-        
-      </div>
-    </header>
-    <main class="post-main" itemprop="articleBody">
-      
-      <h2 id="正式开始新的博客"><a href="#正式开始新的博客" class="headerlink" title="正式开始新的博客"></a>正式开始新的博客</h2><p>为什么要写博客，我觉得除了一个展现自己技术的作用外，最主要还是博客能实现自己所学的输出，有输出才能更好的消化自己学习的东西。</p>
-<p>More info: <a href="https://blog.csdn.net/qq_20326475/article/details/41987223" target="_blank" rel="noopener">远古时代唯一一篇博文</a></p>
-
-      
-    </main>
-    <footer class="post-footer">
-      
-      <div class="post-tags">
-        
-        
-        
-        
-        <a class="post-tag button" href="/blog/tags/hello/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>hello</a>
-        
-      </div>
-      
-    </footer>
-  </article>
   
+  <nav class="post-nav">
+    <div class="post-nav-next post-nav-item">
+      
+      <a href="/blog/2018/08/18/hello-world/" rel="next" title="Hello World ！"><i class="fas fa-angle-left"></i><span class="nav-title">Hello World ！</span></a>
+      
+    </div>
+    <div class="post-nav-prev post-nav-item">
+      
+    </div>
+  </nav>
   
   
 </div>
@@ -274,6 +240,20 @@
 
 
   <div class="sidebar-sticky">
+    
+    
+
+
+
+
+<hr>
+<div class="post-toc sidebar-item" id="toc-div">
+  <div><i class="fas fa-list-ol"></i>文章目录</div>
+  <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-1"><a class="list-group-item toc-link" href="#1-hexo-搭建github-pages"><span class="toc-text">1. hexo 搭建github pages</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#1-1-github-pages申请"><span class="toc-text">1.1. github pages申请</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#1-2-hexo-搭建"><span class="toc-text">1.2. hexo 搭建</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#1-3-github-部署"><span class="toc-text">1.3. github 部署</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#1-4-hexo写博客页面"><span class="toc-text">1.4. hexo写博客页面</span></a></li></ol></li></ol></div>
+</div>
+
+
+
     
     
     
