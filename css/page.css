@@ -1,0 +1,418 @@
+body{
+margin: 0;
+padding: 0;
+color: #DDDDDD;
+font: 36px/2 Tahoma, 'Microsoft YaHei', sans-serif;
+background: #424242;
+}
+
+a{
+	color: #58A7EB;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+p{
+	
+	font: 20px 'Segoe UI','Microsoft Jhenghei','Microsoft YaHei',sans-serif;
+}
+.banner p,#demo p{
+	text-indent: 0;
+}
+h3{
+	color: #FFAA00;
+	font: 50px 'Segoe UI','Microsoft Jhenghei','Microsoft YaHei',sans-serif;
+
+}
+.section-title{
+	font-size: 46px;
+	margin-left: 20px;
+	margin-top: 280px;
+}
+
+header{
+	position: relative;
+	height: 200px;
+	overflow: hidden;
+	
+}
+section{
+	position: relative;
+}
+
+nav{
+	position: fixed;
+	top: 0;
+	right: 0;
+
+	width: 180px;
+	font-size: 18px;
+	text-align: right;
+	border-right: 3px solid #DDDDDD;
+}
+
+footer{
+
+	color: #666;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 30px; 
+	font-size: 12px;
+}
+
+/************************************   page css *****************************************/
+
+
+.page{
+	padding:0 10px;
+	width: 980px;
+	margin: 0 auto;
+	
+}
+.logo_img{
+	display: block;
+	float:left;
+	margin: 68px 0 0 0;
+	width: 95px;
+	height: 95px;
+	opacity: 0;
+	-webkit-transition:opacity .5s;
+	-moz-transition:opacity .5s;
+	-ms-transition:opacity .5s;
+	-o-transition:opacity .5s;
+	transition:opacity .5s;
+}
+
+.logo_info{
+	text-indent: 125px;
+	color: #AAAAAA;
+	font-size: 30px;
+}
+
+
+.logo_text{
+	float:left;
+	color: #C5C5C5;
+	font-size: 120px;
+	font-family: 'Microsoft YaHei';
+	line-height: 140px;
+}
+.logo_extra{
+	float:left;
+	position: relative;
+	left: -475px;
+	top: -70px;
+	color: #C5C5C5;
+	font-size: 120px;
+	font-family: 'Microsoft YaHei';
+}
+.logo_footer{
+	float:left;
+	position: relative;
+	font-size: 20px;
+	left: -140px;
+	top: 120px;
+	color: #AAAAAA;
+	font-family: 'Segoe UI Light','Segoe UI','Microsoft Jhenghei','Microsoft YaHei',sans-serif�?
+
+}
+
+
+.nav_extra{
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	width: 10px;
+	height: 190px;
+	background:  url(../img/checker_grey.png) repeat;
+}
+
+.navlink{
+	display: block;
+	cursor: pointer;
+	padding: 5px 10px 5px 0;
+	position: relative;
+	/*color: #529146;*/
+	/*color: #FF8500;*/
+	color:#DDDDDD;
+
+	-webkit-transition: color 1s;
+	-moz-transition: color 1s;
+	-ms-transition: color 1s;
+	-o-transition: color 1s;
+}
+
+
+.link_bg{
+	position: absolute;
+	width: 0;
+	height: 100%;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	background-color: #DDDDDD;
+	-webkit-transition: width 1s;
+	-moz-transition: width 1s;
+	-ms-transition: width 1s;
+	-o-transition: width 1s;
+}
+.navlink:hover{
+	color: #000;
+	text-decoration: none;
+	-webkit-transition: color .5s;
+	-moz-transition: color .5s;
+	-ms-transition: color .5s;
+	-o-transition: color .5s;
+}
+
+.navlink:hover .link_bg{
+	width: 100%;
+
+	-webkit-transition: width .5s;
+	-moz-transition: width .5s;
+	-ms-transition: width .5s;
+	-o-transition: width .5s;
+}
+
+.banner{
+	width: 100%;
+	height: 330px;
+
+
+	background: rgba(248, 240, 206, 0.26);
+}
+
+
+.banner .intro{
+	padding: 5px 50px;
+	font-size: 20px;
+	position: relative;
+	top: 50px;
+}
+.banner .intro p{
+	width: 450px;
+}
+.banner .intro span{
+	margin: 0 25px 0 10px;
+}
+
+.banner_logo{
+	width: 450px;
+	height: 330px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	overflow: hidden;
+	z-index: -1;
+}
+.banner_logo img{
+	width: 470px;
+}
+
+.features{
+	overflow: hidden;
+	*zoom:1;
+	position: relative;
+}
+.feature{
+	width: 410px;
+	display: inline-block;
+	background: #638F54;
+	border-radius: 5px;
+	text-indent: 10px;
+	float: left;
+}
+.feature p{
+	margin: 0;
+	padding: 0;
+	line-height: 25px;
+	text-indent: 10px;
+}
+
+.feature-head{
+	height: 60px;
+	line-height: 60px;
+	background: #383A3C;
+	border-radius: 5px 5px 0 0;
+	font-size: 24px;
+	position: relative;
+}
+.feature-head .small{
+	color: #595B5E;
+	font-size: 18px;
+}
+.feature-head .icon-chevron-down{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+.feature-body{
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+.feature-body li{
+	padding: 10px 0;
+	border-bottom: 1px solid #434343;
+}
+.feature-body li:last-child{
+	border-bottom: none;
+}
+.feature-body .icon-circle{
+	color: #315C2B;
+	font-size: 30px;
+	float: left;
+	margin-top: 10px;
+}
+.feature-body .small{
+	color: #104902;
+	font-size: 12px;
+}
+
+#toggleBtn{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	cursor: pointer;
+	width: 80px;
+	height: 30px;
+	overflow: hidden;
+	background: #34495E;
+	border-radius: 30px;
+	color: #1ABC9C;
+}
+#toggleBtn .icon-my-circle{
+	font-size: 25px;
+	margin: 0 10px 0 5px;
+	background: #1ABC9C;
+	width: 23px;
+	height: 23px;
+	border-radius: 23px;
+	display: inline-block;
+	vertical-align: -4px;
+}
+#toggleBtn .toggle-radio{
+	float: left;
+	cursor: pointer;
+}
+
+.code_block{
+	width: 900px;
+	height: 500px;
+	overflow: auto;
+	line-height: 1.5;
+	margin: 0 auto;
+}
+.icon-my{
+	position: absolute;
+	border-radius: 3px;
+	font-size: 14px;
+	color: white;
+	padding: 1px 2px;
+	font-weight: bold!important;
+}
+.icon-working{
+	background: #3498DB;
+}
+.icon-beta{
+	background: #E29F00;
+}
+.icon-my-arrow{
+	font-size: 50px;
+	margin: 100px 50px!important;
+	float: left;
+}
+.icon-right-triangle{
+	width: 0px;
+	height: 0px;
+	display: block;
+	border-style: solid;
+	border-width: 8px 10px;
+	border-color: transparent transparent transparent #638F54;
+	position: absolute;
+	left: 100%;
+	top: 8px;
+}
+
+
+#canvas_logo{
+	position: absolute;
+
+	left: 700px;
+	top:50px;
+
+}
+.canvas_logo_start{
+	-webkit-animation: logo-anim 5.15s linear;
+	-moz-animation: logo-anim 5.15s linear;
+	-ms-animation: logo-anim 5.15s linear;
+	-o-animation: logo-anim 5.15s linear;
+	animation: logo-anim 5.15s linear;
+
+	-webkit-transition:opacity 1s;
+	-moz-transition:opacity 1s;
+	-ms-transition:opacity 1s;
+	-o-transition:opacity 1s;
+	transition:opacity 1s;
+}
+
+@-webkit-keyframes logo-anim{
+	0% {left:700px;} /* 跑步: 30/200=0.15  dis:250*/
+	22%{left:450px;} /* 飞踢: 12/200=0.06  dis:100*/
+	30%{left:350px;} /* 拳击: 48/200=0.24  dis:0  */
+	54%{left:350px;} /* 飞踢: 12/200=0.06  dis:100 */
+	60%{left:300px;} /* �?  �?40/200=0.20  dis:250*/
+	80%{left:-5px;}   /* 收尾�?43/200=0.20  dis:0*/
+	100%{left:-5px;}
+}
+@-moz-keyframes logo-anim{
+	0% {left:700px;} /* 跑步: 30/200=0.15  dis:250*/
+	22%{left:450px;} /* 飞踢: 12/200=0.06  dis:100*/
+	30%{left:350px;} /* 拳击: 48/200=0.24  dis:0  */
+	54%{left:350px;} /* 飞踢: 12/200=0.06  dis:100 */
+	60%{left:300px;} /* �?  �?40/200=0.20  dis:250*/
+	80%{left:-5px;}   /* 收尾�?43/200=0.20  dis:0*/
+	100%{left:-5px;}
+}
+@-ms-keyframes logo-anim{
+	0% {left:700px;} /* 跑步: 30/200=0.15  dis:250*/
+	22%{left:450px;} /* 飞踢: 12/200=0.06  dis:100*/
+	30%{left:350px;} /* 拳击: 48/200=0.24  dis:0  */
+	54%{left:350px;} /* 飞踢: 12/200=0.06  dis:100 */
+	60%{left:300px;} /* �?  �?40/200=0.20  dis:250*/
+	80%{left:-5px;}   /* 收尾�?43/200=0.20  dis:0*/
+	100%{left:-5px;}
+}
+@-o-keyframes logo-anim{
+	0% {left:700px;} /* 跑步: 30/200=0.15  dis:250*/
+	22%{left:450px;} /* 飞踢: 12/200=0.06  dis:100*/
+	30%{left:350px;} /* 拳击: 48/200=0.24  dis:0  */
+	54%{left:350px;} /* 飞踢: 12/200=0.06  dis:100 */
+	60%{left:300px;} /* �?  �?40/200=0.20  dis:250*/
+	80%{left:-5px;}   /* 收尾�?43/200=0.20  dis:0*/
+	100%{left:-5px;}
+}
+@keyframes logo-anim{
+	0% {left:700px;} /* 跑步: 30/200=0.15  dis:250*/
+	22%{left:450px;} /* 飞踢: 12/200=0.06  dis:100*/
+	30%{left:350px;} /* 拳击: 48/200=0.24  dis:0  */
+	54%{left:350px;} /* 飞踢: 12/200=0.06  dis:100 */
+	60%{left:300px;} /* �?  �?40/200=0.20  dis:250*/
+	80%{left:-5px;}   /* 收尾�?43/200=0.20  dis:0*/
+	100%{left:-5px;}
+}
+
+.canvas_logo_hidden{
+	opacity: 0!important;
+	left: 0!important;
+}
+.canvas_logo_show{
+	left: -5px !important;
+}
+.logo_show{
+	opacity: 1 !important;
+}
