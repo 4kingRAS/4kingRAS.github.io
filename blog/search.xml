@@ -78,5 +78,12 @@
   
   
     
+    <entry>
+      <title>about</title>
+      <link href="/blog/about/index.html"/>
+      <url>/blog/about/index.html</url>
+      <content type="html"><![CDATA[]]></content>
+    </entry>
+    
   
 </search>

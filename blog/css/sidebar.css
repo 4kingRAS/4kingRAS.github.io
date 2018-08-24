@@ -2,7 +2,7 @@
   text-align: center;
 }
 .info .author-avatar {
-  max-width: 90%;
+  width: 90%;
   display: block;
   margin: 1em auto;
   border: 0.3em solid #fff;
@@ -103,16 +103,10 @@
   text-align: center;
   font-size: 1.5em;
   color: #fff;
-  background: #fc6423;
+  background: #ff2a2a;
+  border: 0.1em solid #f5c6cb;
   padding: 0.2em;
   line-height: 1.25em;
-}
-.post-toc div {
-  margin: 0.5em;
-}
-.post-toc .toc-link.active {
-  color: #006bde;
-  border-bottom: 0.05em solid #006bde;
 }
 .sidebar {
   background: #ddd;
@@ -131,7 +125,7 @@
   height: 2.5em;
   display: block;
   text-align: center;
-  background: #006bde;
+  background: #36e;
   color: #fff;
   padding-top: 0.5em;
 }
@@ -140,7 +134,7 @@
   height: 1.8em;
   border: none;
   border-bottom: 0.1em dotted #fff;
-  background: #006bde;
+  background: #36e;
   color: #fff;
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
@@ -184,6 +178,10 @@
   top: 0;
   padding-bottom: 1em;
 }
+.sidebar .post-toc .toc-link.active {
+  color: #36e;
+  border-bottom: 0.05em solid #36e;
+}
 .sidebar hr {
   background: -webkit-repeating-linear-gradient(135deg, #fff, #fff 0.25em, transparent 0.25em, transparent 0.5em);
   background: -moz-repeating-linear-gradient(135deg, #fff, #fff 0.25em, transparent 0.25em, transparent 0.5em);
@@ -195,26 +193,21 @@
   .sidebar {
     width: 100%;
   }
-  .sidebar .social-link,
-  .sidebar .blogroll {
+  .sidebar .sidebar-item {
     text-align: center;
   }
-  .sidebar .social-link ul,
-  .sidebar .blogroll ul {
+  .sidebar .sidebar-item ul {
     padding: 0;
   }
-  .sidebar .social-link ul li,
-  .sidebar .blogroll ul li {
+  .sidebar .sidebar-item ul li {
     display: inline-block;
     margin: 0.5em 1em;
   }
-  .sidebar .post-toc {
-    text-align: center;
-  }
-  .sidebar .post-toc ol li {
+  .sidebar .sidebar-item .toc {
     text-align: left;
+    display: inline-block;
   }
   .sidebar .sidebar-sticky {
-    position: relative;
+    position: static;
   }
 }
