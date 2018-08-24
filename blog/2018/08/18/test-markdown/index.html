@@ -156,6 +156,8 @@
         </span>
         
         
+        
+        
       </div>
     </header>
     <main class="post-main" itemprop="articleBody">
@@ -195,11 +197,60 @@
     </div>
     <div class="page-nav-prev page-nav-item">
       
-      <a href="/blog/2018/08/23/2018ti-nuedc/" rel="prev" title="2018ti-nuedc"><span class="nav-title">2018ti-nuedc</span><i class="fas fa-angle-right"></i></a>
+      <a href="/blog/2018/08/23/2018ti-nuedc/" rel="prev" title="2018年TI杯大学生电子设计竞赛-手势识别题"><span class="nav-title">2018年TI杯大学生电子设计竞赛-手势识别题</span><i class="fas fa-angle-right"></i></a>
       
     </div>
   </nav>
   
+  
+  
+
+<div class="comments" id="comments">
+  
+  
+  <div class="commentjs" id="comment-thread"></div>
+  <link rel="stylesheet" href="/blog/css/commentjs.css">
+  <script defer type="text/javascript" src="/blog/js/marked.min.js"></script>
+  <script defer type="text/javascript" src="/blog/js/timeago.min.js"></script>
+  <script defer type="text/javascript" src="/blog/js/highlight.min.js"></script>
+  <script defer type="text/javascript" src="/blog/js/commentjs.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+    getComments({
+      "type": "github",
+      "user": "4kingRAS",
+      "repo": "4kingRAS.github.io",
+      "client_id": "eefb7bc8dd60029e2647",
+      "client_secret": "f2919948e952af4ef06658db0a8a2651a3f89005",
+      "no_comment": "这个页面还没有评论，现在就去评论吧！",
+      "go_to_comment": "去评论",
+      "issue_title": "test markdown",
+      "btn_class": "button",
+      "comments_target": "#comment-thread"
+    });
+    marked.setOptions({
+      "highlight": function (code, lang) {
+        return hljs.highlightAuto(code).value;
+      }
+    });
+    function mark() {
+      var markdowns = document.getElementsByClassName("markdown");
+      for (var i = 0; i < markdowns.length; ++i){
+        if (markdowns[i].innerHTML) {
+          markdowns[i].innerHTML = marked(markdowns[i].innerHTML);
+        }
+      }
+    }
+    window.addEventListener("DOMContentLoaded", mark, false);
+    window.addEventListener("load", mark, false);
+  });
+  </script>
+  
+  
+</div>
+
+
+
   
 </div>
 
@@ -276,9 +327,9 @@
       <div><i class="far fa-address-card"></i>社交链接</p></div>
       <ul>
         
-        <li>fas fa-envelope<a href="mailto:4king4ever@gmail.com" target="_blank">E-Mail</a></li>
+        <li><i class="fas fa-envelope"></i><a href="mailto:4king4ever@gmail.com" target="_blank">E-Mail</a></li>
         
-        <li>fab fa-github<a href="https://github.com/4kingRAS" target="_blank">GitHub</a></li>
+        <li><i class="fab fa-github"></i><a href="https://github.com/4kingRAS" target="_blank">GitHub</a></li>
         
       </ul>
     </div>
@@ -289,9 +340,9 @@
       <div><i class="fas fa-link"></i>友情链接</div>
       <ul>
         
-        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+        <li><i class="fas fa-link"></i><a href="https://github.com/" target="_blank">GitHub</a></li>
         
-        <li><a href="https://developer.mozilla.org/" target="_blank">MDN</a></li>
+        <li><i class="fas fa-link"></i><a href="https://math1as.com/" target="_blank">math1as-吴神</a></li>
         
       </ul>
     </div>
