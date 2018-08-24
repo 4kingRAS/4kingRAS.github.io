@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://4kingras.github.io/blog/"/>
-  <updated>2018-08-18T15:47:22.740Z</updated>
+  <updated>2018-08-24T08:01:07.266Z</updated>
   <id>http://4kingras.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018ti-nuedc</title>
+    <link href="http://4kingras.github.io/blog/2018/08/23/2018ti-nuedc/"/>
+    <id>http://4kingras.github.io/blog/2018/08/23/2018ti-nuedc/</id>
+    <published>2018-08-23T14:49:02.000Z</published>
+    <updated>2018-08-24T08:01:07.266Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;2018年TI杯大学生电子设计竞赛-手势识别题&quot;&gt;&lt;a href=&quot;#2018年TI杯大学生电子设计竞赛-手势识别题&quot; class=&quot;headerlink&quot; title=&quot;2018年TI杯大学生电子设计竞赛-手势识别题&quot;&gt;&lt;/a&gt;2018年TI杯大学生电子设计竞赛-手势识别题&lt;/h1&gt;&lt;hr&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;没想到能拿到省一，本文做个简单记录&lt;/p&gt;
+&lt;h2 id=&quot;D题：手势识别装置&quot;&gt;&lt;a href=&quot;#D题：手势识别装置&quot; class=&quot;headerlink&quot; title=&quot;D题：手势识别装置&quot;&gt;&lt;/a&gt;D题：手势识别装置&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.nuedc-training.com.cn/index/news/details/new_id/56&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.nuedc-training.com.cn/index/news/details/new_id/56&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;1．任务&quot;&gt;&lt;a href=&quot;#1．任务&quot; class=&quot;headerlink&quot; title=&quot;1．任务&quot;&gt;&lt;/a&gt;1．任务&lt;/h4&gt;&lt;p&gt;基于TI公司传感芯片FDC2214设计制作一个手势识别装置，实现对猜拳游戏和划拳游戏的判决。该装置也可以直接使用FDC2214 EVM板，要求所使用的FDC2214芯片或者EVM板不得超过2块。&lt;/p&gt;
+&lt;p&gt;装置具有训练和判决两种工作模式。在判决模式下实验装置能对指定人员进行猜拳游戏和划拳游戏的判决。这里猜拳游戏的判决是指对手势比划“石头”、“剪刀”和“布”的判定，划拳游戏的判定是指手势比划“1”、“2”、“3”、“4”和“5”的判定。在训练模式下能对任意人员进行猜拳游戏和划拳游戏的手势训练，经过有限次训练后，能进行正确的猜拳游戏和划拳游戏的手势判决。&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ee" scheme="http://4kingras.github.io/blog/categories/ee/"/>
+    
+    
+      <category term="ti" scheme="http://4kingras.github.io/blog/tags/ti/"/>
+    
+      <category term="nuedc" scheme="http://4kingras.github.io/blog/tags/nuedc/"/>
+    
+      <category term="ee" scheme="http://4kingras.github.io/blog/tags/ee/"/>
+    
+      <category term="msp430" scheme="http://4kingras.github.io/blog/tags/msp430/"/>
+    
+      <category term="stm32" scheme="http://4kingras.github.io/blog/tags/stm32/"/>
+    
+  </entry>
   
   <entry>
     <title>test markdown</title>
