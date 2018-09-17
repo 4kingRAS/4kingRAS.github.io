@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://lea.verou.me/cv.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<title>4king's résumé</title>
+<meta name="viewport" content="width=device-width">
+<style>
+/**
+ * "Variables"
+ */
+h1, h2, .date {
+	font: small-caps normal 100% Constantia, 'Palatino Linotype', Palatino, Georgia, serif;
+}
+
+h1,
+header > h1 > span,
+header > ul > li:before {
+	color: #9BBB59;
+}
+
+/**
+ * Style
+ */
+
+* { margin:0; }
+
+html {
+	background: #9BA2B0;
+	font-size: 14px;
+}
+
+body {
+	width: 65em;
+	padding: 7em 8%;
+	box-sizing: border-box;
+	margin: 1em auto;
+	background: white;
+	box-shadow: 1px 1px 5px 2px rgba(0,0,0,.3);
+	font: 100%/1.6 'Segoe UI', Optima, 'Hiragino Kaku Gothic Pro', 'Apple Gothic', Tahoma, 'Helvetica Neue', sans-serif;
+
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+
+	-moz-transition: .5s font-size;
+	-ms-transition: .5s font-size;
+	-o-transition: .5s font-size;
+	-webkit-transition: .5s font-size;
+	transition: .5s font-size;
+}
+
+h1, h2 {
+	page-break-after: avoid;
+	margin-bottom: .4em;
+}
+
+h1 {
+	margin-top: 1.2em;
+	font-size: 200%;
+}
+
+h2 {
+	margin-top: 1em;
+	font-size: 150%;
+	color: hsl(20, 15%, 50%);
+	font-weight: bold;
+}
+
+a {
+	color:#4F6128;
+	text-decoration-skip: ink;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted #4F6128;
+	cursor: help;
+}
+
+p {
+	margin: .6em 0;
+}
+
+h1 + p,
+h2 + p {
+	margin-top: 0;
+}
+
+ul {
+	padding: 0;
+	list-style: square;
+}
+
+	ul ul {
+		padding-left: 3em;
+	}
+
+header {
+	text-align: center;
+}
+
+	header > h1 {
+		color: #7F7F7F;
+		color: hsl(20, 15%, 50%);
+		border-bottom: 1px solid #9BBB59;
+		margin: 0 0 .15em;
+		text-indent: 1.2em;
+		font-size: 450%;
+		line-height: 1.05;
+		font-variant: normal;
+	}
+
+		header > h1 > span {
+			display: inline-block;
+			margin-left: -2.7em;
+			vertical-align: super;
+			font-size: 50%;
+		}
+
+	header > ul {
+		display: block;
+		margin-bottom: .5em;
+	}
+
+		header > ul > li {
+			display: inline;
+			list-style: none;
+		}
+
+		header > ul > li:before {
+			content: '● ';
+		}
+
+		header > ul > li:first-child:before {
+			content: none;
+		}
+
+	address {
+		font-style: normal;
+	}
+
+section {
+	page-break-inside: avoid;
+}
+
+	section > h1 {
+		box-shadow: calc(-8vw + .6em) 0 white, calc(-8vw - .1em) 0 0 -.1em;
+	}
+
+li {
+	page-break-inside: avoid;
+}
+
+ol.timeline {
+	padding: 0;
+	border: 0 solid #ddd;
+	border-width: 4px 0;
+}
+
+	ol.timeline > li {
+		list-style: none;
+		padding: .4em 0;
+		border: 1px solid white; /* Chrome printing bug */
+		border-top-color: #ccc;
+	}
+
+	ol.timeline > li:first-child {
+		border-top: 0;
+	}
+
+		ol.timeline > li > p {
+			margin: 0;
+		}
+
+		ol.timeline > li > .date {
+			float: left;
+			margin-left: .1em;
+			max-width: 8rem;
+			color: gray;
+			font-size: 110%;
+		}
+
+		ol.timeline > li > .date ~ p {
+			margin-left: 9rem;
+		}
+
+.note {
+	margin-top: .4em;
+	font-size: 75%;
+}
+
+	.note a:not(:hover):not(:active) {
+		color: inherit;
+	}
+
+footer {
+	margin-top: 3em;
+	font-style: italic;
+}
+
+.amp {
+	font-style: italic;
+}
+
+#projects .timeline li p:nth-of-type(2) a:first-of-type {
+	font-weight: bold;
+}
+
+@media (max-width:950px) {
+	html { font-size: 12px; }
+}
+
+@media (max-width:700px) {
+	html { font-size: 11px; }
+}
+
+@media (max-width:600px) {
+	body {
+		width: auto;
+		margin: 1em;
+	}
+}
+
+@media print {
+	@page {
+		size: letter;
+		margin: 2cm 2.5cm;
+	}
+
+	html {
+		background: none;
+		font-size: 12pt;
+	}
+
+	body {
+		box-shadow: none;
+		padding: 0;
+	}
+
+	section > h1 {
+		box-shadow: calc(-8vw + 2em) 0 white, calc(-8vw - .1em) 0 0 -.1em;
+	}
+
+	footer {
+		display: none;
+	}
+}
+</style>
+
+</head>
+<body>
+
+<header>
+	<h1>YL. Wang <span>CV</span></h1>
+	<ul>
+		<li><strong><a href="https://4kingras.github.io/blog/" target="_blank">My Blog</a></strong></li>
+		<li><a target="_blank" href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=2300688967&website=www.oicqzone.com">QQ @4king</a></li>
+		<li><a href="https://github.com/4kingRAS" target="_blank">My Github</a></li>
+	</ul>
+</header>
+
+<section id="summary">
+	<h1>Summary</h1>
+	<p>My name is YL . Wang, I’m currently pursuing a Bachelor's degree in Electrical-Engineering & Computer Science at
+		<strong><a href="https://www.wh.sdu.edu.cn/" target="_blank">ShanDong University (weihai)</a></strong>.
+		I 'm intrested in low level system, Linux, and Distribute system, Cloud Technology.
+		In the recent past, I have got a <a href="https://www.nuedc-training.com.cn/" target="_blank">National University Electronic Design Competetion First prize</a>. Happy :)
+	</p>
+</section>
+
+<section id="education">
+	<h1>Education</h1>
+	<ol class="timeline">
+		<li>
+			<p class="date">2016–2020 (Expected)</p>
+			<p><strong>B.Sc. in  Electrical-Engineering & Computer ScienceComputer Science</strong></p>
+			<p><a href="https://www.wh.sdu.edu.cn/" target="_blank">ShanDong University (weihai)</a></p>
+		</li>
+	</ol>
+</section>
+
+<section id="projects">
+	<h1>My Projects</h1>
+	<ol class="timeline">
+		<li>
+			<p class="date">Aug 2018</p>
+			<p><a href="https://www.nuedc-training.com.cn/" target="_blank">NUEDC (province)</a>: First Prize</p>
+			<p class="note">National University Electronic Design Competetion</p>
+		</li>
+		<li>
+			<p class="date">May 2018</p>
+			<p><a href="http://www.aicrobot.com/" target="_blank">AICrobot Competetion (province)</a>: Second Prize</p>
+			<p class="note">A self-design Robot skill Competetion host by ShanDong Pronvince</p>
+		</li>
+	</ol>
+	<p>More of my open source work can be found in <a href="https://github.com/4kingRAS" target="_blank">my Github account</a>.
+</p></section>
+
+<section id="technical-skills">
+	<h1>Technical skills</h1>
+	<p>I have basic experience with a wide range of programming languages and technologies, including:</p>
+	<ul>
+		<li>Basic DataStructure &amp; Algorithm</li>
+		<li>Java / C / CPP</li>
+		<li>basically Python </li>
+		<li>OpenCV &amp; a little DL</li>
+		<li>Embedded Development</li>
+	</ul>
+	<p>I also have experience with a wide range of IT Technologies, including SQL, Photoshop and many more.</p>
+</section>
+
+<section id="languages">
+	<h1>Languages</h1>
+	<ul>
+		<li><strong>Chinese</strong>: Native</li>
+		<li><strong>English</strong>: CET-6 474 (Good at Reading)</li>
+	</ul>
+</section>
+
+<script>
+(function(){
+	if(!document.querySelectorAll) return;
+	var external = document.querySelectorAll('a[href^="http://"], a[href^="https://"]'), a;
+	for(var i=external.length; a=external[--i];) a.setAttribute('target', '_blank');
+})();
+</script>
+
+
+</body></html>
