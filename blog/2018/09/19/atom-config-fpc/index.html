@@ -82,7 +82,7 @@
     <script defer type="text/javascript" src="/blog/js/index.js"></script>
     
     <script defer type="text/javascript" src="/blog/js/custom.js"></script>
-    <title>标签: stm32 | 4kingRAS | SDU | EE | Fin - 写点技术文章</title>
+    <title>atom-config-fpc | 4kingRAS | SDU | EE | Fin - 写点技术文章</title>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN"  data-spy="scroll" data-target=".list-group">
     
@@ -124,22 +124,144 @@
         <div class="main-container">
           <div class="content">
             
-<div id="tag" class="tag page">
-  <h1 class="page-title">stm32</h1>
+<div id="post" class="page">
   
   <article class="article post card" itemscope itemtype="http://schema.org/Article">
-    <header id="post-header" class="post-header">
-      <h1 class="post-title-simple" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/blog/2018/08/23/2018ti-nuedc/" itemprop="url">2018年TI杯大学生电子设计竞赛-手势识别题</a>
-      </h1>
-      
-      <span class="post-date">
-        <time title="post-date" itemprop="dateCreated datePublished" datetime="2018-08-23T22:49:02+08:00">08-23</time>
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="http://4kingras.github.io/blog/blog/2018/09/19/atom-config-fpc/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="4king">
+       <meta itemprop="description" content="LESS TALK MORE WORK">
+       <meta itemprop="image" content="/blog/images/avatar.png">
       </span>
-      
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="4kingRAS | SDU | EE | Fin">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">atom-config-fpc</h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-09-19T13:43:22+08:00">2018-09-19 13:43:22</time></span>
+        </span>
+        
+        
+        
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/develop/" itemprop="url" rel="index"><span itemprop="name">develop</span></a></span>
+        </span>
+        
+        
+        
+        
+      </div>
     </header>
+    <main class="post-main" itemprop="articleBody">
+      <h1 id="Atom-配置Pascal开发环境"><a href="#Atom-配置Pascal开发环境" class="headerlink" title="Atom 配置Pascal开发环境"></a>Atom 配置Pascal开发环境</h1><p>&emsp;&emsp;我学的第一门编程语言是Pascal，为了参加noip学的。快10年过去了，delphi没人用了，pascal也即将被noip删除，而borland公司坟头草都两米高了。但是语言是个长尾，总还有人在玩玩的，fortan这么老不也有人用嘛。今天怀旧一下，配置一下Pascal开发环境，FPC作为IDE太丑而且更新越来越慢了。</p>
+<p><strong>我的环境是 Win7 SP1 + Atom + Free Pascal Compiler</strong></p>
+<hr>
+<h2 id="配置Pascal编译器"><a href="#配置Pascal编译器" class="headerlink" title="配置Pascal编译器"></a>配置Pascal编译器</h2><p>首先下载FPC，我的版本是3.0.4, (<a href="https://sourceforge.net/projects/freepascal/" target="_blank" rel="noopener">https://sourceforge.net/projects/freepascal/</a>)</p>
+<p>然后安装，建议不在c盘，安装完毕后配置环境变量。Mac的话参考fpc的readme配置Path</p>
+<blockquote>
+<p>我的电脑 → 右键 → 属性 → 高级系统设置 → 高级 → 环境变量 → 在系统变量之中找到path→ 点击编辑 → 在后面加入下面的路径<br>  <strong>;D:\FPC\3.0.4\bin\i386-win32</strong><br> → 确定 → 确定<br>并且注意前面的英文分号;隔开</p>
+</blockquote>
+<p><code>D:\FPC\3.0.4\bin\i386-win32</code>是你的pascal编译器的所在目录，FPC就是Free Pascal Compiler</p>
+<p>配置好命令行后，打开cmd，<br>键入<code>fpc -h</code> 会出现fpc的命令帮助就说明成功。</p>
+<h2 id="配置Atom"><a href="#配置Atom" class="headerlink" title="配置Atom"></a>配置Atom</h2><p>下载Atom  <a href="https://atom.io/" target="_blank" rel="noopener">https://atom.io/</a></p>
+<p>Atom是github开发的新一代编辑器，我感觉很舒服，比sublime好用，尤其是它哪来写markdown。插件也很齐全。</p>
+<p>选择Windows版下载。</p>
+<p>安装完成后，在Welcome Guide里点击<code>Open installer</code></p>
+<p>安装package，其实就是插件，搜索pascal，选择<code>langauge-pascal</code></p>
+<p>是老外写的pascal语言支持的插件。</p>
+<p>重启后，选<code>File</code> - <code>New File</code>保存成<code>.pas</code>后缀即可。</p>
+<h2 id="编译与运行"><a href="#编译与运行" class="headerlink" title="编译与运行"></a>编译与运行</h2><p>写完代码<strong>保存</strong>后，在命令行下进入你的pas文件所在目录</p>
+<p>输入<code>fpc 文件名</code> 回车，进行编译链接</p>
+<p>再输入一次 文件名，回车就是运行</p>
+<p><img src="/blog/2018/09/19/atom-config-fpc/test.png" alt="成功"></p>
+
+    </main>
+    <footer class="post-footer">
+      
+      <div class="post-tags">
+        
+        <a class="post-tag button" href="/blog/tags/pascal/" rel="tag"><i class="fas fa-tags"></i>pascal</a>
+        
+        <a class="post-tag button" href="/blog/tags/atom/" rel="tag"><i class="fas fa-tags"></i>atom</a>
+        
+        <a class="post-tag button" href="/blog/tags/fpc/" rel="tag"><i class="fas fa-tags"></i>fpc</a>
+        
+        <a class="post-tag button" href="/blog/tags/compile/" rel="tag"><i class="fas fa-tags"></i>compile</a>
+        
+      </div>
+      
+    </footer>
   </article>
   
+  
+  <nav class="page-nav">
+    <div class="page-nav-next page-nav-item">
+      
+      <a href="/blog/2018/09/11/new-or-die/" rel="next" title="new-or-die"><i class="fas fa-angle-left"></i><span class="nav-title">new-or-die</span></a>
+      
+    </div>
+    <div class="page-nav-prev page-nav-item">
+      
+    </div>
+  </nav>
+  
+  
+  
+
+<div class="comments" id="comments">
+  
+  
+  <div class="commentjs" id="comment-thread"></div>
+  <link rel="stylesheet" href="/blog/css/commentjs.css">
+  <script defer type="text/javascript" src="/blog/js/marked.min.js"></script>
+  <script defer type="text/javascript" src="/blog/js/timeago.min.js"></script>
+  <script defer type="text/javascript" src="/blog/js/highlight.min.js"></script>
+  <script defer type="text/javascript" src="/blog/js/commentjs.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+    getComments({
+      "type": "github",
+      "user": "4kingRAS",
+      "repo": "4kingRAS.github.io",
+      "client_id": "eefb7bc8dd60029e2647",
+      "client_secret": "f2919948e952af4ef06658db0a8a2651a3f89005",
+      "no_comment": "这个页面还没有评论，现在就去评论吧！",
+      "go_to_comment": "去评论",
+      "issue_title": "atom-config-fpc",
+      "btn_class": "button",
+      "comments_target": "#comment-thread"
+    });
+    marked.setOptions({
+      "highlight": function (code, lang) {
+        return hljs.highlightAuto(code).value;
+      }
+    });
+    function mark() {
+      var markdowns = document.getElementsByClassName("markdown");
+      for (var i = 0; i < markdowns.length; ++i){
+        if (markdowns[i].innerHTML) {
+          markdowns[i].innerHTML = marked(markdowns[i].innerHTML);
+        }
+      }
+    }
+    window.addEventListener("DOMContentLoaded", mark, false);
+    window.addEventListener("load", mark, false);
+  });
+  </script>
+  
+  
+</div>
+
+
+
   
 </div>
 
@@ -198,6 +320,17 @@
 
 
   <div class="sidebar-sticky">
+    
+    
+    
+    
+    
+    <hr>
+    <div class="post-toc sidebar-item" id="toc-div">
+      <div><i class="fas fa-list-ol"></i>文章目录</div>
+      <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-1"><a class="list-group-item toc-link" href="#Atom-配置Pascal开发环境"><span class="toc-text">Atom 配置Pascal开发环境</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#配置Pascal编译器"><span class="toc-text">配置Pascal编译器</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#配置Atom"><span class="toc-text">配置Atom</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#编译与运行"><span class="toc-text">编译与运行</span></a></li></ol></li></ol></div>
+    </div>
+    
     
     
     <hr>

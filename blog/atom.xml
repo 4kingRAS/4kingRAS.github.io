@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://4kingras.github.io/blog/"/>
-  <updated>2018-09-11T04:20:19.236Z</updated>
+  <updated>2018-09-19T06:10:14.751Z</updated>
   <id>http://4kingras.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>atom-config-fpc</title>
+    <link href="http://4kingras.github.io/blog/2018/09/19/atom-config-fpc/"/>
+    <id>http://4kingras.github.io/blog/2018/09/19/atom-config-fpc/</id>
+    <published>2018-09-19T05:43:22.000Z</published>
+    <updated>2018-09-19T06:10:14.751Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Atom-配置Pascal开发环境&quot;&gt;&lt;a href=&quot;#Atom-配置Pascal开发环境&quot; class=&quot;headerlink&quot; title=&quot;Atom 配置Pascal开发环境&quot;&gt;&lt;/a&gt;Atom
+        
+      
+    
+    </summary>
+    
+      <category term="develop" scheme="http://4kingras.github.io/blog/categories/develop/"/>
+    
+    
+      <category term="pascal" scheme="http://4kingras.github.io/blog/tags/pascal/"/>
+    
+      <category term="atom" scheme="http://4kingras.github.io/blog/tags/atom/"/>
+    
+      <category term="fpc" scheme="http://4kingras.github.io/blog/tags/fpc/"/>
+    
+      <category term="compile" scheme="http://4kingras.github.io/blog/tags/compile/"/>
+    
+  </entry>
   
   <entry>
     <title>new-or-die</title>
