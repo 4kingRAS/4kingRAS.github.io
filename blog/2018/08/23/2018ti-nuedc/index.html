@@ -1,167 +1,205 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    <meta name="theme-color" content="#33363b">
-    <meta name="msapplication-TileColor" content="#33363b">
-    
-    
-    
-    <meta name="keywords" content="Life, ARIA, Hexo">
-    
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="/blog/favicons/apple-touch-icon.png">
-    
-    
-    <link rel="icon" type="image/png" sizes="192x192" href="/blog/favicons/android-chrome-192x192.png">
-    
-    
-    <link rel="icon" type="image/png" sizes="32x32" href="/blog/favicons/favicon-32x32.png">
-    
-    
-    <link rel="icon" type="image/png" sizes="16x16" href="/blog/favicons/favicon-16x16.png">
-    
-    
-    <link rel="mask-icon" href="/blog/favicons/safari-pinned-tab.svg" color="#33363b">
-    
-    
-    <link rel="manifest" href="/blog/favicons/site.webmanifest">
-    
-    
-    <meta name="msapplication-config" content="/blog/favicons/browserconfig.xml">
-    
-    
-    <link rel="alternate" href="/blog/atom.xml" title="4kingRAS | SDU | EE | Fin" type="application/atom+xml" />
-    
-    
-    <link rel="shortcut icon" type="image/x-icon" href="/blog/favicons/favicon.ico">
-    
-    
-    <link rel="stylesheet" type="text/css" href="/blog/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="/blog/css/index.css">
-    
-    <link rel="stylesheet" type="text/css" href="/blog/css/sidebar.css">
-    
-    
-<link rel="stylesheet" type="text/css" href="/blog/css/page.css">
-<link rel="stylesheet" type="text/css" href="/blog/css/post.css">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword" content="4king">
+    <link rel="shortcut icon" href="/hexo-theme-huxblog/img/favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="/blog/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="/blog/css/atom-one-dark.css">
-    <link rel="stylesheet" type="text/css" href="/blog/css/lightgallery.min.css">
-    <script type="text/javascript" src="/blog/js/jquery.min.js"></script>
-    <script defer type="text/javascript" src="/blog/js/util.js"></script>
-    <script defer type="text/javascript" src="/blog/js/scrollspy.js"></script>
-    <script defer type="text/javascript" src="/blog/js/fontawesome-all.min.js"></script>
-    <script defer type="text/javascript" src="/blog/js/lightgallery.min.js"></script>
-    <script defer type="text/javascript" src="/blog/js/lg-fullscreen.min.js"></script>
-    <script defer type="text/javascript" src="/blog/js/lg-hash.min.js"></script>
-    <script defer type="text/javascript" src="/blog/js/lg-pager.min.js"></script>
-    <script defer type="text/javascript" src="/blog/js/lg-thumbnail.min.js"></script>
-    <script defer type="text/javascript" src="/blog/js/lg-zoom.min.js"></script>
-    
-    <script defer src="/blog/js/busuanzi.pure.mini.js"></script>
-    
-    
-    <script defer type="text/javascript" src="/blog/js/search.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function () {
-      var searchPath = "search.xml";
-      if (searchPath.length === 0) {
-        searchPath = "search.xml";
-      }
-      var path = "/blog/" + searchPath;
-      searchFunc(path, "search-input", "search-result");
-    });
-    </script>
-    
-    
-    <script defer type="text/javascript" src="/blog/js/index.js"></script>
-    
-    <script defer type="text/javascript" src="/blog/js/custom.js"></script>
-    <title>2018年TI杯大学生电子设计竞赛-手势识别题 | 4kingRAS | SDU | EE | Fin - 写点技术文章</title>
-  </head>
-  <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN"  data-spy="scroll" data-target=".list-group">
-    
-<header id="header" class="header" style="background: #33363b;">
-  <div class="container">
-    <div class="header-container">
-      <div class="header-title">
-        <h1 class="title"><a href="/blog/">4kingRAS | SDU | EE | Fin</a></h1>
-        <h2 class="subtitle">写点技术文章</h2>
-      </div>
-      
-      <div class="logo">
-        <img src="/blog/images/logo.png" alt="logo">
-      </div>
-      
+    <title>
+        
+          2018年TI杯大学生电子设计竞赛-手势识别题 - 4king的博客 | 4king&#39;s Blog
+        
+    </title>
+
+    <link rel="canonical" href="https://4kingras.github.io/hexo-theme-huxblog/2018/08/23/2018ti-nuedc/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/hexo-theme-huxblog/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/hexo-theme-huxblog/css/hux-blog.min.css">
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/hexo-theme-huxblog/css/highlight.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/hexo-theme-huxblog/">4king&#39;s Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/hexo-theme-huxblog/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/hexo-theme-huxblog/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/hexo-theme-huxblog/archives/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/hexo-theme-huxblog/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
     </div>
-    <nav id="nav" class="nav">
-      <a id="nav-toggle" class="nav-toggle" aria-hidden="true"><i class="fas fa-bars" aria-label="切换导航栏"></i></a>
-      <ul id="menu" role="menubar" aria-hidden="false">
-        
-        <li role="menuitem"><a href="/blog/">首页</a></li>
-        
-        <li role="menuitem"><a href="/blog/archives/">归档</a></li>
-        
-        <li role="menuitem"><a href="/blog/categories/">分类</a></li>
-        
-        <li role="menuitem"><a href="/blog/tags/">标签</a></li>
-        
-        <li role="menuitem"><a href="/blog/about/">关于</a></li>
-        
-      </ul>
-    </nav>
-  </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    
+<!-- Image to hack wechat -->
+<!-- <img src="https://4kingras.github.io/hexo-theme-huxblog/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('/hexo-theme-huxblog/img/home-bg.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                          <a class="tag" href="/hexo-theme-huxblog/tags/#ti" title="ti">ti</a>
+                        
+                          <a class="tag" href="/hexo-theme-huxblog/tags/#nuedc" title="nuedc">nuedc</a>
+                        
+                          <a class="tag" href="/hexo-theme-huxblog/tags/#ee" title="ee">ee</a>
+                        
+                          <a class="tag" href="/hexo-theme-huxblog/tags/#msp430" title="msp430">msp430</a>
+                        
+                          <a class="tag" href="/hexo-theme-huxblog/tags/#stm32" title="stm32">stm32</a>
+                        
+                    </div>
+                    <h1>2018年TI杯大学生电子设计竞赛-手势识别题</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by 4king on
+                        2018-08-23
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
 
-    <main id="main" class="main">
-      <div class="container">
-        <div class="main-container">
-          <div class="content">
-            
-<div id="post" class="page">
-  
-  <article class="article post card" itemscope itemtype="http://schema.org/Article">
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="http://4kingras.github.io/blog/blog/2018/08/23/2018ti-nuedc/">
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-       <meta itemprop="name" content="4king">
-       <meta itemprop="description" content="LESS TALK MORE WORK">
-       <meta itemprop="image" content="/blog/images/avatar.png">
-      </span>
-      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-       <meta itemprop="name" content="4kingRAS | SDU | EE | Fin">
-      </span>
-    </div>
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">2018年TI杯大学生电子设计竞赛-手势识别题</h1>
-      <div class="post-meta">
-        
-        <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-08-23T22:49:02+08:00">2018-08-23 22:49:02</time></span>
-        </span>
-        
-        
-        
-        <span class="post-meta-divider divider">|</span>
-        
-        <span class="post-categories">
-          
-          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/ee/" itemprop="url" rel="index"><span itemprop="name">ee</span></a></span>
-        </span>
-        
-        
-        
-        
-      </div>
-    </header>
-    <main class="post-main" itemprop="articleBody">
-      <hr>
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <hr>
 <p>&emsp;&emsp;没想到能拿到省一，本文做个简单记录</p>
 <h2 id="D题：手势识别装置"><a href="#D题：手势识别装置" class="headerlink" title="D题：手势识别装置"></a>D题：手势识别装置</h2><p><a href="https://www.nuedc-training.com.cn/index/news/details/new_id/56" target="_blank" rel="noopener">https://www.nuedc-training.com.cn/index/news/details/new_id/56</a></p>
 <h3 id="任务"><a href="#任务" class="headerlink" title="任务"></a>任务</h3><p>基于TI公司传感芯片FDC2214设计制作一个手势识别装置，实现对猜拳游戏和划拳游戏的判决。该装置也可以直接使用FDC2214 EVM板，要求所使用的FDC2214芯片或者EVM板不得超过2块。</p>
@@ -173,7 +211,7 @@
 <p>（5）其他。                                             （ 4分）<br>（6）设计报告。                                         （20分）</p>
 <hr>
 <h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><h3 id="1-设备搭建"><a href="#1-设备搭建" class="headerlink" title="1 - 设备搭建"></a>1 - 设备搭建</h3><p>&emsp;&emsp;FDC2214是一种电容传感器，将传感器接一块极板。手在接近极板时就会影响极板的电容值，这个电容值会由FDC2214给出。根据测试，手接触极板的面积与返回的电容值相关，根据这个原理就能进行简单的手势识别。</p>
-<p>设备搭建只需根据题目所给的测试样例，当然极板是越灵敏越好，一般铜板就能凑合用。<br><img src="/blog/2018/08/23/2018ti-nuedc/test.png" alt="测试样例"> </p>
+<p>设备搭建只需根据题目所给的测试样例，当然极板是越灵敏越好，一般铜板就能凑合用。<br><img src="2018ti-nuedc/test.png" alt="测试样例"> </p>
 <h3 id="2-硬件设计及开发环境"><a href="#2-硬件设计及开发环境" class="headerlink" title="2 - 硬件设计及开发环境"></a>2 - 硬件设计及开发环境</h3><p>&emsp;&emsp;由于各种条件限制，而且本人也是第一次接触单片机开发（之前有过一段arduino的开发经验），所以走了许多弯路。</p>
 <p>主要的困难有三个：</p>
 <p>&emsp;&emsp; 一：FDC2214没有买evm开发板，很不好调试，为了调试队友买了<a href="https://www.st.com/en/microcontrollers/stm32f103rc.html" target="_blank" rel="noopener">stm32f103rct6</a>，淘宝店自带了OLED板和标程。</p>
@@ -183,17 +221,23 @@
 <p>&emsp;&emsp; 三：stm32能调试以后，又一个坑是队友买的是最小系统板，没有带按钮。自己焊按钮还要去抖等等各种复杂操作，太麻烦，也来不及学。好在我之前做arduino知道，办法总比困难多，解决方案是用Ti的msp430的evm板，自带了两个按钮，然后用<a href="http://www.ti.com/tool/msp-exp430f5529lp" target="_blank" rel="noopener">msp430f5529 LaunchPad</a>的UART串口与stm32板通信。</p>
 <p>&emsp;&emsp; 一个好的工程师一定不能执着于技术，什么方法简便易行，稳定可靠就用什么方法，切忌花里胡哨把自己带入坑里。ti的板子开发一般用CCS，语法奇奇怪怪，引脚的设定也很奇怪。为了快速上手我找到了ti系列的arduino，也就是<a href="http://energia.nu/" target="_blank" rel="noopener">energia</a>，Ti官方也有支持，很不错的IDE。</p>
 <p>在energia里选好板子，就可以直接开发了，跟arduino一类的语法，引脚使用直接digitalWrite什么的，很方便。</p>
-<p><img src="/blog/2018/08/23/2018ti-nuedc/energia.png" width="458" height="291" alt="Energia"></p>
+<p><img src="energia.png" width="458" height="291" alt="Energia"></p>
 
 <p>&emsp;&emsp;至于stm32就老老实实用MDK 5，代码就是纯C，不难懂。有几个坑就是连接器一定要搞明白，有ST-Link的，也有Jtag的古老方式的。具体的搜百度。</p>
 <p>最后的硬件方案如图（手不是我）：</p>
-<p><img src="/blog/2018/08/23/2018ti-nuedc/device.png" alt="硬件连接"></p>
-<p><img src="/blog/2018/08/23/2018ti-nuedc/block.png" alt="板子"></p>
-<h3 id="3-程序设计"><a href="#3-程序设计" class="headerlink" title="3 - 程序设计"></a>3 - 程序设计</h3><p>程序流程如图：<br><img src="/blog/2018/08/23/2018ti-nuedc/flow.png" alt="flowchart"></p>
+<p>硬件连接:</p>
+<p><img src="device.png" width="778" height="391" alt="device"></p>
+
+<p>板子:</p>
+<p><img src="block.png" width="778" height="391" alt="block"></p>
+
+<h3 id="3-程序设计"><a href="#3-程序设计" class="headerlink" title="3 - 程序设计"></a>3 - 程序设计</h3><p>程序流程如图：</p>
+<p><img src="flow.png" width="778" height="391" alt="flow"></p>
+
 <p>&emsp;&emsp;总的思路就是，用msp430的按键发送命令，6用于模式切换，9发一次开始训练，再发一次结束训练并自动返回均值。判决就根据这均值取范围，很简单的算法，不过很有效。注意的一点就是，UART的跳线，TX要接对应的RX，波特率要匹配。</p>
-<h4 id="主体结构"><a href="#主体结构" class="headerlink" title="主体结构"></a>主体结构</h4><figure class="hljs highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>&#123;<br>	u8 t = <span class="hljs-number">0</span>;			<span class="hljs-comment">//状态位，0为判决模式，1，2，3，4，5，剪刀石头布 1-8</span><br>	u8 len;<br>	u8 flag = <span class="hljs-number">0</span>;			<span class="hljs-comment">//判断开始键是否按下</span><br>	u8 count = <span class="hljs-number">0</span>;			<span class="hljs-comment">//样本个数</span><br>	<span class="hljs-keyword">float</span> temp = <span class="hljs-number">0</span>;			<span class="hljs-comment">//save mean</span><br>  	Sys_Init();<br>	<span class="hljs-keyword">while</span>(<span class="hljs-number">1</span>)<br>	&#123;<br>		<span class="hljs-keyword">if</span>(USART_RX_STA&amp;<span class="hljs-number">0x8000</span>)	<span class="hljs-comment">//UART收到信息</span><br>		&#123;<br>			len = USART_RX_STA&amp;<span class="hljs-number">0x3f</span>;<br>			<span class="hljs-keyword">if</span>(USART_RX_BUF[<span class="hljs-number">0</span>] == <span class="hljs-number">54</span>)&#123;		<span class="hljs-comment">//UART</span><br>				<span class="hljs-keyword">if</span>(t &lt; <span class="hljs-number">8</span>)		<span class="hljs-comment">//收到6，进入状态循环，0-8</span><br>					t++;<br>				<span class="hljs-keyword">else</span><br>					t = <span class="hljs-number">0</span>;<br>			&#125;<br>			<span class="hljs-keyword">if</span>(USART_RX_BUF[<span class="hljs-number">0</span>] == <span class="hljs-number">57</span>)&#123;		<span class="hljs-comment">//收到9开始训练，再收到一次则取均值</span><br>				<span class="hljs-keyword">if</span>(flag)&#123;					<span class="hljs-comment">// mean = sum / 样本数</span><br>					flag = <span class="hljs-number">0</span>;<br>					sp[t - <span class="hljs-number">1</span>] = temp / count;<br>					temp = <span class="hljs-number">0</span>;<br>					count = <span class="hljs-number">0</span>;<br>				&#125;<br>				<span class="hljs-keyword">else</span> <br>					flag = <span class="hljs-number">1</span>;<br>			&#125;<br>			USART_RX_STA=<span class="hljs-number">0</span>;<br>		&#125;<br>		showHead(t);			<span class="hljs-comment">//信息显示</span><br>		OLED_P6x8Str(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, AsciiBuff, <span class="hljs-number">0</span>);	<span class="hljs-comment">//OLED字符串显示 ， （x， y， string， flag）</span><br><br>		<span class="hljs-keyword">if</span>(flag)&#123;							<br>			<span class="hljs-keyword">if</span>(t &gt; <span class="hljs-number">5</span>)<br>				temp += res0 - temp0;		<span class="hljs-comment">//大于5时才是剪刀石头布训练</span><br>			<span class="hljs-keyword">else</span><br>				temp += res1 - temp1;<br>			count++;<br>			showHead(<span class="hljs-number">66</span>);<br>		&#125;<br>		<span class="hljs-keyword">else</span> showHead(<span class="hljs-number">99</span>);<br>		OLED_P6x8Str(<span class="hljs-number">0</span>, <span class="hljs-number">2</span>, AsciiBuff, <span class="hljs-number">0</span>);<br>		<br>		u8ToAscii(<span class="hljs-number">0</span>, JudgeType(res0 - temp0));<br>		OLED_P6x8Str(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, AsciiBuff, <span class="hljs-number">0</span>);<br><br>		u8ToAscii(JudgeNum(res1 - temp1), <span class="hljs-number">4</span>);<br>		OLED_P6x8Str(<span class="hljs-number">0</span>, <span class="hljs-number">3</span>, AsciiBuff, <span class="hljs-number">0</span>);<br>		<br>		<span class="hljs-comment">//OLED浮点数显示 ， （x， y， float， flag）	</span><br>		Oled_Printf_Float(<span class="hljs-number">0</span>, <span class="hljs-number">7</span>, sp[t - <span class="hljs-number">1</span>], <span class="hljs-number">0</span>);	<span class="hljs-comment">//当前均值信息</span><br>		<span class="hljs-comment">//Oled_Printf_Float(0, 5, res0 - temp0, 0);</span><br>		Oled_Printf_Float(<span class="hljs-number">0</span>, <span class="hljs-number">5</span>, res0 - temp0, <span class="hljs-number">0</span>);		<span class="hljs-comment">//剪刀石头布pf  temp为电容板的初始电容值，在init里写</span><br>		Oled_Printf_Float(<span class="hljs-number">0</span>, <span class="hljs-number">6</span>, res1 - temp1, <span class="hljs-number">0</span>);		<span class="hljs-comment">//12345电容值</span><br>		<span class="hljs-keyword">while</span>(USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);	<span class="hljs-comment">//UART通信结束</span><br>		delay_ms(<span class="hljs-number">100</span>);<br>	&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-<h4 id="ASCII显示"><a href="#ASCII显示" class="headerlink" title="ASCII显示"></a>ASCII显示</h4><figure class="hljs highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">u8ToAscii</span><span class="hljs-params">(u8 num, <span class="hljs-keyword">int</span> type)</span>			<span class="hljs-comment">//显示程序，num为数字，type决定猜拳划拳</span><br></span>&#123;						<span class="hljs-comment">//OLED格式 8*8</span><br>	u8 i = <span class="hljs-number">0</span>;<br>	AsciiBuff[<span class="hljs-number">7</span>] = <span class="hljs-number">32</span>;					<span class="hljs-comment">//第八位为空格</span><br>	<span class="hljs-keyword">switch</span>(type)&#123;<br>    	<span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:<br>    		AsciiBuff[<span class="hljs-number">0</span>] = <span class="hljs-number">74</span>;<br>			AsciiBuff[<span class="hljs-number">1</span>] = <span class="hljs-number">105</span>;<br>			AsciiBuff[<span class="hljs-number">2</span>] = <span class="hljs-number">97</span>;  <br>			AsciiBuff[<span class="hljs-number">3</span>] = <span class="hljs-number">110</span>;  <br>			AsciiBuff[<span class="hljs-number">4</span>] = <span class="hljs-number">100</span>;<br>			AsciiBuff[<span class="hljs-number">5</span>] = <span class="hljs-number">97</span>;<br>			AsciiBuff[<span class="hljs-number">6</span>] = <span class="hljs-number">111</span>;			<span class="hljs-comment">//ASCII码 Jiandao</span><br>			<span class="hljs-keyword">break</span>;<br>		<span class="hljs-keyword">case</span> <span class="hljs-number">2</span>:<br>    ......<br>			<span class="hljs-keyword">break</span>;<br>	&#125;<br><br>&#125;<br><br><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">showHead</span><span class="hljs-params">(u8 type)</span></span>&#123;<br>  	AsciiBuff[<span class="hljs-number">0</span>] = <span class="hljs-number">84</span>;<br>	AsciiBuff[<span class="hljs-number">1</span>] = <span class="hljs-number">82</span>;<br>	AsciiBuff[<span class="hljs-number">2</span>] = <span class="hljs-number">65</span>;  <br>	AsciiBuff[<span class="hljs-number">3</span>] = <span class="hljs-number">73</span>;  <br>	AsciiBuff[<span class="hljs-number">4</span>] = <span class="hljs-number">78</span>;<br>	AsciiBuff[<span class="hljs-number">5</span>] = <span class="hljs-number">32</span>;	<br>	AsciiBuff[<span class="hljs-number">7</span>] = <span class="hljs-number">32</span>;				<span class="hljs-comment">//ASCII码 TRAIN</span><br>	<span class="hljs-keyword">switch</span>(type)&#123;<br>    	<span class="hljs-keyword">case</span> <span class="hljs-number">0</span>:<br>      AsciiBuff[<span class="hljs-number">0</span>] = <span class="hljs-number">74</span>;<br>			AsciiBuff[<span class="hljs-number">1</span>] = <span class="hljs-number">85</span>;<br>			AsciiBuff[<span class="hljs-number">2</span>] = <span class="hljs-number">68</span>;  <br>			AsciiBuff[<span class="hljs-number">3</span>] = <span class="hljs-number">71</span>;  <br>			AsciiBuff[<span class="hljs-number">4</span>] = <span class="hljs-number">69</span>;<br>			AsciiBuff[<span class="hljs-number">5</span>] = <span class="hljs-number">32</span>;<br>			AsciiBuff[<span class="hljs-number">6</span>] = <span class="hljs-number">32</span>;		<span class="hljs-comment">//ASCII码 JUDGE</span><br>			<span class="hljs-keyword">break</span>;<br>    	<span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:<br>			AsciiBuff[<span class="hljs-number">6</span>] = <span class="hljs-number">49</span>;		<span class="hljs-comment">//1 - 5</span><br>    		<span class="hljs-keyword">break</span>;<br>    	<span class="hljs-keyword">case</span> <span class="hljs-number">2</span>:<br>    ......<br>			<span class="hljs-keyword">break</span>;<br>	&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-<h4 id="训练"><a href="#训练" class="headerlink" title="训练"></a>训练</h4><figure class="hljs highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">JudgeType</span><span class="hljs-params">(<span class="hljs-keyword">float</span> pf)</span></span>&#123;						<span class="hljs-comment">//sp为训练的均值</span><br>	<span class="hljs-keyword">if</span>(pf &lt; sp[<span class="hljs-number">5</span>] + <span class="hljs-number">0.6</span> &amp;&amp; pf &gt; sp[<span class="hljs-number">5</span>] - <span class="hljs-number">0.6</span>)	<span class="hljs-comment">//jiandao </span><br>		<span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;<br>	<span class="hljs-keyword">if</span>(pf &lt; sp[<span class="hljs-number">6</span>] + <span class="hljs-number">0.4</span> &amp;&amp; pf &gt; sp[<span class="hljs-number">6</span>] - <span class="hljs-number">0.5</span>) 	<span class="hljs-comment">//shitou</span><br>		<span class="hljs-keyword">return</span> <span class="hljs-number">2</span>;<br>	<span class="hljs-keyword">if</span>(pf &gt; sp[<span class="hljs-number">7</span>] - <span class="hljs-number">0.2</span>) 						<span class="hljs-comment">//bu</span><br>		<span class="hljs-keyword">return</span> <span class="hljs-number">3</span>;<br>	<span class="hljs-keyword">return</span> <span class="hljs-number">5</span>; 									<span class="hljs-comment">// erorr</span><br>&#125;<br><br><span class="hljs-function">u8 <span class="hljs-title">JudgeNum</span><span class="hljs-params">(<span class="hljs-keyword">float</span> pf)</span></span>&#123;		<br>	<span class="hljs-keyword">if</span>(pf &lt; sp[<span class="hljs-number">0</span>] + <span class="hljs-number">0.6</span> &amp;&amp; pf &gt; sp[<span class="hljs-number">0</span>] - <span class="hljs-number">0.6</span>) <br>		<span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;<br>	<span class="hljs-keyword">if</span>(pf &lt; sp[<span class="hljs-number">1</span>] + <span class="hljs-number">0.5</span> &amp;&amp; pf &gt; sp[<span class="hljs-number">1</span>] - <span class="hljs-number">0.5</span>) <br>		<span class="hljs-keyword">return</span> <span class="hljs-number">2</span>;<br>	<span class="hljs-keyword">if</span>(pf &lt; sp[<span class="hljs-number">2</span>] + <span class="hljs-number">0.45</span> &amp;&amp; pf &gt; sp[<span class="hljs-number">2</span>] - <span class="hljs-number">0.45</span>) <br>		<span class="hljs-keyword">return</span> <span class="hljs-number">3</span>;<br>	<span class="hljs-keyword">if</span>(pf &lt; sp[<span class="hljs-number">3</span>] + <span class="hljs-number">0.4</span> &amp;&amp; pf &gt; sp[<span class="hljs-number">3</span>] - <span class="hljs-number">0.4</span>) <br>		<span class="hljs-keyword">return</span> <span class="hljs-number">4</span>;<br>	<span class="hljs-keyword">if</span>(pf &gt; sp[<span class="hljs-number">4</span>] - <span class="hljs-number">0.2</span>)<br>		<span class="hljs-keyword">return</span> <span class="hljs-number">5</span>;<br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h4 id="主体结构"><a href="#主体结构" class="headerlink" title="主体结构"></a>主体结构</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span>&#123;</span><br><span class="line">	u8 t = <span class="number">0</span>;			<span class="comment">//状态位，0为判决模式，1，2，3，4，5，剪刀石头布 1-8</span></span><br><span class="line">	u8 len;</span><br><span class="line">	u8 flag = <span class="number">0</span>;			<span class="comment">//判断开始键是否按下</span></span><br><span class="line">	u8 count = <span class="number">0</span>;			<span class="comment">//样本个数</span></span><br><span class="line">	<span class="keyword">float</span> temp = <span class="number">0</span>;			<span class="comment">//save mean</span></span><br><span class="line">  	Sys_Init();</span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(USART_RX_STA&amp;<span class="number">0x8000</span>)	<span class="comment">//UART收到信息</span></span><br><span class="line">		&#123;</span><br><span class="line">			len = USART_RX_STA&amp;<span class="number">0x3f</span>;</span><br><span class="line">			<span class="keyword">if</span>(USART_RX_BUF[<span class="number">0</span>] == <span class="number">54</span>)&#123;		<span class="comment">//UART</span></span><br><span class="line">				<span class="keyword">if</span>(t &lt; <span class="number">8</span>)		<span class="comment">//收到6，进入状态循环，0-8</span></span><br><span class="line">					t++;</span><br><span class="line">				<span class="keyword">else</span></span><br><span class="line">					t = <span class="number">0</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(USART_RX_BUF[<span class="number">0</span>] == <span class="number">57</span>)&#123;		<span class="comment">//收到9开始训练，再收到一次则取均值</span></span><br><span class="line">				<span class="keyword">if</span>(flag)&#123;					<span class="comment">// mean = sum / 样本数</span></span><br><span class="line">					flag = <span class="number">0</span>;</span><br><span class="line">					sp[t - <span class="number">1</span>] = temp / count;</span><br><span class="line">					temp = <span class="number">0</span>;</span><br><span class="line">					count = <span class="number">0</span>;</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">else</span> </span><br><span class="line">					flag = <span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			USART_RX_STA=<span class="number">0</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		showHead(t);			<span class="comment">//信息显示</span></span><br><span class="line">		OLED_P6x8Str(<span class="number">0</span>, <span class="number">0</span>, AsciiBuff, <span class="number">0</span>);	<span class="comment">//OLED字符串显示 ， （x， y， string， flag）</span></span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span>(flag)&#123;							</span><br><span class="line">			<span class="keyword">if</span>(t &gt; <span class="number">5</span>)</span><br><span class="line">				temp += res0 - temp0;		<span class="comment">//大于5时才是剪刀石头布训练</span></span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">				temp += res1 - temp1;</span><br><span class="line">			count++;</span><br><span class="line">			showHead(<span class="number">66</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> showHead(<span class="number">99</span>);</span><br><span class="line">		OLED_P6x8Str(<span class="number">0</span>, <span class="number">2</span>, AsciiBuff, <span class="number">0</span>);</span><br><span class="line">		</span><br><span class="line">		u8ToAscii(<span class="number">0</span>, JudgeType(res0 - temp0));</span><br><span class="line">		OLED_P6x8Str(<span class="number">0</span>, <span class="number">1</span>, AsciiBuff, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">		u8ToAscii(JudgeNum(res1 - temp1), <span class="number">4</span>);</span><br><span class="line">		OLED_P6x8Str(<span class="number">0</span>, <span class="number">3</span>, AsciiBuff, <span class="number">0</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//OLED浮点数显示 ， （x， y， float， flag）	</span></span><br><span class="line">		Oled_Printf_Float(<span class="number">0</span>, <span class="number">7</span>, sp[t - <span class="number">1</span>], <span class="number">0</span>);	<span class="comment">//当前均值信息</span></span><br><span class="line">		<span class="comment">//Oled_Printf_Float(0, 5, res0 - temp0, 0);</span></span><br><span class="line">		Oled_Printf_Float(<span class="number">0</span>, <span class="number">5</span>, res0 - temp0, <span class="number">0</span>);		<span class="comment">//剪刀石头布pf  temp为电容板的初始电容值，在init里写</span></span><br><span class="line">		Oled_Printf_Float(<span class="number">0</span>, <span class="number">6</span>, res1 - temp1, <span class="number">0</span>);		<span class="comment">//12345电容值</span></span><br><span class="line">		<span class="keyword">while</span>(USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);	<span class="comment">//UART通信结束</span></span><br><span class="line">		delay_ms(<span class="number">100</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="ASCII显示"><a href="#ASCII显示" class="headerlink" title="ASCII显示"></a>ASCII显示</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">u8ToAscii</span><span class="params">(u8 num, <span class="keyword">int</span> type)</span>			<span class="comment">//显示程序，num为数字，type决定猜拳划拳</span></span></span><br><span class="line"><span class="function"></span>&#123;						<span class="comment">//OLED格式 8*8</span></span><br><span class="line">	u8 i = <span class="number">0</span>;</span><br><span class="line">	AsciiBuff[<span class="number">7</span>] = <span class="number">32</span>;					<span class="comment">//第八位为空格</span></span><br><span class="line">	<span class="keyword">switch</span>(type)&#123;</span><br><span class="line">    	<span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">    		AsciiBuff[<span class="number">0</span>] = <span class="number">74</span>;</span><br><span class="line">			AsciiBuff[<span class="number">1</span>] = <span class="number">105</span>;</span><br><span class="line">			AsciiBuff[<span class="number">2</span>] = <span class="number">97</span>;  </span><br><span class="line">			AsciiBuff[<span class="number">3</span>] = <span class="number">110</span>;  </span><br><span class="line">			AsciiBuff[<span class="number">4</span>] = <span class="number">100</span>;</span><br><span class="line">			AsciiBuff[<span class="number">5</span>] = <span class="number">97</span>;</span><br><span class="line">			AsciiBuff[<span class="number">6</span>] = <span class="number">111</span>;			<span class="comment">//ASCII码 Jiandao</span></span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">    ......</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">showHead</span><span class="params">(u8 type)</span></span>&#123;</span><br><span class="line">  	AsciiBuff[<span class="number">0</span>] = <span class="number">84</span>;</span><br><span class="line">	AsciiBuff[<span class="number">1</span>] = <span class="number">82</span>;</span><br><span class="line">	AsciiBuff[<span class="number">2</span>] = <span class="number">65</span>;  </span><br><span class="line">	AsciiBuff[<span class="number">3</span>] = <span class="number">73</span>;  </span><br><span class="line">	AsciiBuff[<span class="number">4</span>] = <span class="number">78</span>;</span><br><span class="line">	AsciiBuff[<span class="number">5</span>] = <span class="number">32</span>;	</span><br><span class="line">	AsciiBuff[<span class="number">7</span>] = <span class="number">32</span>;				<span class="comment">//ASCII码 TRAIN</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">switch</span>(type)&#123;</span><br><span class="line">    	<span class="keyword">case</span> <span class="number">0</span>:</span><br><span class="line">      		AsciiBuff[<span class="number">0</span>] = <span class="number">74</span>;</span><br><span class="line">			AsciiBuff[<span class="number">1</span>] = <span class="number">85</span>;</span><br><span class="line">			AsciiBuff[<span class="number">2</span>] = <span class="number">68</span>;  </span><br><span class="line">			AsciiBuff[<span class="number">3</span>] = <span class="number">71</span>;  </span><br><span class="line">			AsciiBuff[<span class="number">4</span>] = <span class="number">69</span>;</span><br><span class="line">			AsciiBuff[<span class="number">5</span>] = <span class="number">32</span>;</span><br><span class="line">			AsciiBuff[<span class="number">6</span>] = <span class="number">32</span>;		<span class="comment">//ASCII码 JUDGE</span></span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">    	<span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">			AsciiBuff[<span class="number">6</span>] = <span class="number">49</span>;		<span class="comment">//1 - 5</span></span><br><span class="line">    		<span class="keyword">break</span>;</span><br><span class="line">    	<span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">    ......</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="训练"><a href="#训练" class="headerlink" title="训练"></a>训练</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">JudgeType</span><span class="params">(<span class="keyword">float</span> pf)</span></span>&#123;						<span class="comment">//sp为训练的均值</span></span><br><span class="line">	<span class="keyword">if</span>(pf &lt; sp[<span class="number">5</span>] + <span class="number">0.6</span> &amp;&amp; pf &gt; sp[<span class="number">5</span>] - <span class="number">0.6</span>)	<span class="comment">//jiandao </span></span><br><span class="line">		<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(pf &lt; sp[<span class="number">6</span>] + <span class="number">0.4</span> &amp;&amp; pf &gt; sp[<span class="number">6</span>] - <span class="number">0.5</span>) 	<span class="comment">//shitou</span></span><br><span class="line">		<span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">	<span class="keyword">if</span>(pf &gt; sp[<span class="number">7</span>] - <span class="number">0.2</span>) 						<span class="comment">//bu</span></span><br><span class="line">		<span class="keyword">return</span> <span class="number">3</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">5</span>; 									<span class="comment">// erorr</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">u8 <span class="title">JudgeNum</span><span class="params">(<span class="keyword">float</span> pf)</span></span>&#123;		</span><br><span class="line">	<span class="keyword">if</span>(pf &lt; sp[<span class="number">0</span>] + <span class="number">0.6</span> &amp;&amp; pf &gt; sp[<span class="number">0</span>] - <span class="number">0.6</span>) </span><br><span class="line">		<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(pf &lt; sp[<span class="number">1</span>] + <span class="number">0.5</span> &amp;&amp; pf &gt; sp[<span class="number">1</span>] - <span class="number">0.5</span>) </span><br><span class="line">		<span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">	<span class="keyword">if</span>(pf &lt; sp[<span class="number">2</span>] + <span class="number">0.45</span> &amp;&amp; pf &gt; sp[<span class="number">2</span>] - <span class="number">0.45</span>) </span><br><span class="line">		<span class="keyword">return</span> <span class="number">3</span>;</span><br><span class="line">	<span class="keyword">if</span>(pf &lt; sp[<span class="number">3</span>] + <span class="number">0.4</span> &amp;&amp; pf &gt; sp[<span class="number">3</span>] - <span class="number">0.4</span>) </span><br><span class="line">		<span class="keyword">return</span> <span class="number">4</span>;</span><br><span class="line">	<span class="keyword">if</span>(pf &gt; sp[<span class="number">4</span>] - <span class="number">0.2</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="number">5</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>&emsp;&emsp; 硬件太难做了，很多坑，很多时候不只是理论知识，更需要经验堆积。还是投入软件赚钱比较轻松。</p>
 <h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p>&emsp;&emsp;<a href="http://energia.nu/pinmaps/msp-exp430f5529/" target="_blank" rel="noopener">http://energia.nu/pinmaps/msp-exp430f5529/</a></p>
@@ -201,224 +245,298 @@
 <p>&emsp;&emsp;<a href="https://www.cnblogs.com/zjvskn/p/5757962.html" target="_blank" rel="noopener">https://www.cnblogs.com/zjvskn/p/5757962.html</a></p>
 <p>&emsp;&emsp;<a href="https://github.com/treasersimplifies/GestureRecognition" target="_blank" rel="noopener">https://github.com/treasersimplifies/GestureRecognition</a></p>
 
-    </main>
-    <footer class="post-footer">
-      
-      <div class="post-tags">
-        
-        <a class="post-tag button" href="/blog/tags/ti/" rel="tag"><i class="fas fa-tags"></i>ti</a>
-        
-        <a class="post-tag button" href="/blog/tags/nuedc/" rel="tag"><i class="fas fa-tags"></i>nuedc</a>
-        
-        <a class="post-tag button" href="/blog/tags/ee/" rel="tag"><i class="fas fa-tags"></i>ee</a>
-        
-        <a class="post-tag button" href="/blog/tags/msp430/" rel="tag"><i class="fas fa-tags"></i>msp430</a>
-        
-        <a class="post-tag button" href="/blog/tags/stm32/" rel="tag"><i class="fas fa-tags"></i>stm32</a>
-        
-      </div>
-      
-    </footer>
-  </article>
-  
-  
-  <nav class="page-nav">
-    <div class="page-nav-next page-nav-item">
-      
-      <a href="/blog/2018/08/18/test-markdown/" rel="next" title="test markdown"><i class="fas fa-angle-left"></i><span class="nav-title">test markdown</span></a>
-      
-    </div>
-    <div class="page-nav-prev page-nav-item">
-      
-      <a href="/blog/2018/09/11/new-or-die/" rel="prev" title="New Or Die"><span class="nav-title">New Or Die</span><i class="fas fa-angle-right"></i></a>
-      
-    </div>
-  </nav>
-  
-  
-  
 
-<div class="comments" id="comments">
-  
-  
-  <div class="commentjs" id="comment-thread"></div>
-  <link rel="stylesheet" href="/blog/css/commentjs.css">
-  <script defer type="text/javascript" src="/blog/js/marked.min.js"></script>
-  <script defer type="text/javascript" src="/blog/js/timeago.min.js"></script>
-  <script defer type="text/javascript" src="/blog/js/highlight.min.js"></script>
-  <script defer type="text/javascript" src="/blog/js/commentjs.js"></script>
-  <script type="text/javascript">
-  $(document).ready(function () {
-    getComments({
-      "type": "github",
-      "user": "4kingRAS",
-      "repo": "4kingRAS.github.io",
-      "client_id": "eefb7bc8dd60029e2647",
-      "client_secret": "f2919948e952af4ef06658db0a8a2651a3f89005",
-      "no_comment": "这个页面还没有评论，现在就去评论吧！",
-      "go_to_comment": "去评论",
-      "issue_title": "2018年TI杯大学生电子设计竞赛-手势识别题",
-      "btn_class": "button",
-      "comments_target": "#comment-thread"
-    });
-    marked.setOptions({
-      "highlight": function (code, lang) {
-        return hljs.highlightAuto(code).value;
-      }
-    });
-    function mark() {
-      var markdowns = document.getElementsByClassName("markdown");
-      for (var i = 0; i < markdowns.length; ++i){
-        if (markdowns[i].innerHTML) {
-          markdowns[i].innerHTML = marked(markdowns[i].innerHTML);
-        }
-      }
+                <hr>
+
+                
+
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/hexo-theme-huxblog/2018/09/11/new-or-die/" data-toggle="tooltip" data-placement="top" title="New Or Die">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/hexo-theme-huxblog/2018/08/18/test-markdown/" data-toggle="tooltip" data-placement="top" title="test markdown">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                
+
+                
+                <!-- disqus 评论框 start -->
+                <div class="comment">
+                    <div id="disqus_thread" class="disqus-thread"></div>
+                </div>
+                <!-- disqus 评论框 end -->
+                
+
+            </div>
+    <!-- Side Catalog Container -->
+        
+
+    <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/hexo-theme-huxblog/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/hexo-theme-huxblog/tags/#ti" title="ti">ti</a>
+                        
+                          <a class="tag" href="/hexo-theme-huxblog/tags/#nuedc" title="nuedc">nuedc</a>
+                        
+                          <a class="tag" href="/hexo-theme-huxblog/tags/#ee" title="ee">ee</a>
+                        
+                          <a class="tag" href="/hexo-theme-huxblog/tags/#msp430" title="msp430">msp430</a>
+                        
+                          <a class="tag" href="/hexo-theme-huxblog/tags/#stm32" title="stm32">stm32</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="https://math1as.com/" target="_blank">Mathias&#39; Blog</a></li>
+                    
+                        <li><a href="" target="_blank"></a></li>
+                    
+                        <li><a href="#" target="_blank">Foo</a></li>
+                    
+                </ul>
+                
+            </div>
+
+        </div>
+    </div>
+</article>
+
+
+
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "4king";
+    var disqus_identifier = "https://4kingras.github.io/2018/08/23/2018ti-nuedc/";
+    var disqus_url = "https://4kingras.github.io/2018/08/23/2018ti-nuedc/";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
     }
-    window.addEventListener("DOMContentLoaded", mark, false);
-    window.addEventListener("load", mark, false);
-  });
-  </script>
-  
-  
-</div>
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
 
 
 
-  
-</div>
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                    <li>
+                        <a target="_blank" href="https://twitter.com/4king">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/Demonbane">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
 
-          </div>
-          
-          
-          
-<aside class="sidebar" id="sidebar" style="background: url(/blog/images/background.png);">
-  
-  <div class="search">
-    <div class="form-group">
-      <i class="fas fa-search"></i><input type="search" id="search-input" name="q" results="0" placeholder="搜索" class="form-control"/>
-    </div>
-  </div>
-  <div class="search-result-box" id="search-result"></div>
-  
-  
-<div class="info sidebar-item" id="info">
-  
-  <img class="author-avatar" src="/blog/images/avatar.png" alt="4king">
-  
-  <h1 class="author-name">4king</h1>
-  <h2 class="author-description">LESS TALK MORE WORK</h2>
-  <div class="site-count">
-    
-    <div class="archives-count">
-      <div class="site-count-title">归档</div>
-      <div><a href="/blog/archives/">6</a></div>
-    </div>
-    
-    
-    
-    <span class="site-count-divider divider">|</span>
-    
-    <div class="categories-count">
-      <div class="site-count-title">分类</div>
-      <div><a href="/blog/categories/">5</a></div>
-    </div>
-    
-    
-    
-    <span class="site-count-divider divider">|</span>
-    
-    <div class="tags-count">
-      <div class="site-count-title">标签</div>
-      <div><a href="/blog/tags/">15</a></div>
-    </div>
-    
-  </div>
-  
-  <div class="rss">
-    <a class="rss-link button sidebar-item" href="/blog/atom.xml"><i class="fas fa-rss"></i>RSS</a>
-  </div>
-  
-</div>
+                
 
+                
 
-  <div class="sidebar-sticky">
-    
-    
-    
-    
-    
-    <hr>
-    <div class="post-toc sidebar-item" id="toc-div">
-      <div><i class="fas fa-list-ol"></i>文章目录</div>
-      <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#D题：手势识别装置"><span class="toc-text">D题：手势识别装置</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#任务"><span class="toc-text">任务</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#要求"><span class="toc-text">要求</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#思路"><span class="toc-text">思路</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#1-设备搭建"><span class="toc-text">1 - 设备搭建</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#2-硬件设计及开发环境"><span class="toc-text">2 - 硬件设计及开发环境</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#3-程序设计"><span class="toc-text">3 - 程序设计</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#主体结构"><span class="toc-text">主体结构</span></a></li><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#ASCII显示"><span class="toc-text">ASCII显示</span></a></li><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#训练"><span class="toc-text">训练</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#总结"><span class="toc-text">总结</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#Reference"><span class="toc-text">Reference</span></a></li></ol></li></ol></div>
-    </div>
-    
-    
-    
-    <hr>
-    <div class="social-link sidebar-item">
-      <div><i class="far fa-address-card"></i>社交链接</p></div>
-      <ul>
-        
-        <li><i class="fas fa-envelope"></i><a href="mailto:4king4ever@gmail.com" target="_blank">E-Mail</a></li>
-        
-        <li><i class="fab fa-github"></i><a href="https://github.com/4kingRAS" target="_blank">GitHub</a></li>
-        
-      </ul>
-    </div>
-    
-    
-    <hr>
-    <div class="blogroll sidebar-item">
-      <div><i class="fas fa-link"></i>友情链接</div>
-      <ul>
-        
-        <li><i class="fas fa-link"></i><a href="https://github.com/" target="_blank">GitHub</a></li>
-        
-        <li><i class="fas fa-link"></i><a href="https://math1as.com/" target="_blank">math1as-吴神</a></li>
-        
-      </ul>
-    </div>
-    
-  </div>
-</aside>
+                
+                    <li>
+                        <a target="_blank" href="https://github.com/4kingras">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
 
+                
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/4king">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
 
-          
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 4king&#39;s Blog2015- 2019 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    Ported by <a href="https://4kingRAS.github.io">4king</a> | 
+                    <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=4kingras&repo=4kingRAS.github.io&type=star&count=true">
+                    </iframe>
+                </p>
+            </div>
         </div>
-      </div>
-    </main>
-    
-<footer id="footer" class="footer" style="background: #33363b;">
-  <div class="container">
-    <div class="back-to-top">
-      <button id="back-to-top"><i class="fas fa-angle-double-up" aria-label="回到顶部"></i></button>
     </div>
-    <div class="footer-container">
-      <div class="footer-left">
-        <div class="copyright">
-          <span class="author">4king</span><span class="year"><i class="far fa-copyright"></i>2015 - 2018</span>
-        </div>
-        
-        <div class="busuanzi">
-          <span id="busuanzi_container_site_pv"><i class="fas fa-eye" aria-label="站点点击量" aria-hidden="false"></i><span id="busuanzi_value_site_pv"></span></span><span id="busuanzi_container_site_uv"><i class="fas fa-user" aria-label="站点用户数" aria-hidden="false"></i><span id="busuanzi_value_site_uv"></span></span><span id="busuanzi_container_page_pv"><i class="far fa-file-alt"></i><span id="busuanzi_value_page_pv" aria-label="页面点击量" aria-hidden="false"></span></span>
-        </div>
-        
-      </div>
-      <div class="footer-right">
-        <div class="custom-info">
-          
-          托管于<i class="fab fa-github-alt"></i><a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
-          
-        </div>
-        <div class="powered-by">
-          由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
-        </div>
-      </div>
-    </div>
-  </div>
 </footer>
 
+<!-- jQuery -->
+<script src="/hexo-theme-huxblog/js/jquery.min.js"></script>
 
-  </body>
+<!-- Bootstrap Core JavaScript -->
+<script src="/hexo-theme-huxblog/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/hexo-theme-huxblog/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://4kingras.github.io/hexo-theme-huxblog/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- Side Catalog -->
+
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="https://4kingras.github.io/hexo-theme-huxblog/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
 </html>
