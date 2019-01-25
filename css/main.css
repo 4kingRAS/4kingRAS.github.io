@@ -298,7 +298,7 @@ margin: 0 15px 20px 0;
 	left: -140px;
 	top: 120px;
 	color: #AAAAAA;
-	font-family: 'Segoe UI Light','Segoe UI','Microsoft Jhenghei','Microsoft YaHei',sans-serif�?
+	font-family: 'Segoe UI Light','Segoe UI','Microsoft Jhenghei','Microsoft YaHei',sans-serif�?
 
 }
 
@@ -314,7 +314,7 @@ margin: 0 15px 20px 0;
 }
 
 .navlink{
-	display: block;
+	display: inline;
 	cursor: pointer;
 	padding: 5px 10px 5px 0;
 	position: relative;
@@ -549,8 +549,8 @@ margin: 0 15px 20px 0;
 	22%{left:450px;} /* 飞踢: 12/200=0.06  dis:100*/
 	30%{left:350px;} /* 拳击: 48/200=0.24  dis:0  */
 	54%{left:350px;} /* 飞踢: 12/200=0.06  dis:100 */
-	60%{left:300px;} /* �?  �?40/200=0.20  dis:250*/
-	80%{left:-5px;}   /* 收尾�?43/200=0.20  dis:0*/
+	60%{left:300px;} /* �?  �?40/200=0.20  dis:250*/
+	80%{left:-5px;}   /* 收尾�?43/200=0.20  dis:0*/
 	100%{left:-5px;}
 }
 @-moz-keyframes logo-anim{
@@ -558,8 +558,8 @@ margin: 0 15px 20px 0;
 	22%{left:450px;} /* 飞踢: 12/200=0.06  dis:100*/
 	30%{left:350px;} /* 拳击: 48/200=0.24  dis:0  */
 	54%{left:350px;} /* 飞踢: 12/200=0.06  dis:100 */
-	60%{left:300px;} /* �?  �?40/200=0.20  dis:250*/
-	80%{left:-5px;}   /* 收尾�?43/200=0.20  dis:0*/
+	60%{left:300px;} /* �?  �?40/200=0.20  dis:250*/
+	80%{left:-5px;}   /* 收尾�?43/200=0.20  dis:0*/
 	100%{left:-5px;}
 }
 @-ms-keyframes logo-anim{
@@ -567,8 +567,8 @@ margin: 0 15px 20px 0;
 	22%{left:450px;} /* 飞踢: 12/200=0.06  dis:100*/
 	30%{left:350px;} /* 拳击: 48/200=0.24  dis:0  */
 	54%{left:350px;} /* 飞踢: 12/200=0.06  dis:100 */
-	60%{left:300px;} /* �?  �?40/200=0.20  dis:250*/
-	80%{left:-5px;}   /* 收尾�?43/200=0.20  dis:0*/
+	60%{left:300px;} /* �?  �?40/200=0.20  dis:250*/
+	80%{left:-5px;}   /* 收尾�?43/200=0.20  dis:0*/
 	100%{left:-5px;}
 }
 @-o-keyframes logo-anim{
@@ -576,8 +576,8 @@ margin: 0 15px 20px 0;
 	22%{left:450px;} /* 飞踢: 12/200=0.06  dis:100*/
 	30%{left:350px;} /* 拳击: 48/200=0.24  dis:0  */
 	54%{left:350px;} /* 飞踢: 12/200=0.06  dis:100 */
-	60%{left:300px;} /* �?  �?40/200=0.20  dis:250*/
-	80%{left:-5px;}   /* 收尾�?43/200=0.20  dis:0*/
+	60%{left:300px;} /* �?  �?40/200=0.20  dis:250*/
+	80%{left:-5px;}   /* 收尾�?43/200=0.20  dis:0*/
 	100%{left:-5px;}
 }
 @keyframes logo-anim{
@@ -585,8 +585,8 @@ margin: 0 15px 20px 0;
 	22%{left:450px;} /* 飞踢: 12/200=0.06  dis:100*/
 	30%{left:350px;} /* 拳击: 48/200=0.24  dis:0  */
 	54%{left:350px;} /* 飞踢: 12/200=0.06  dis:100 */
-	60%{left:300px;} /* �?  �?40/200=0.20  dis:250*/
-	80%{left:-5px;}   /* 收尾�?43/200=0.20  dis:0*/
+	60%{left:300px;} /* �?  �?40/200=0.20  dis:250*/
+	80%{left:-5px;}   /* 收尾�?43/200=0.20  dis:0*/
 	100%{left:-5px;}
 }
 
