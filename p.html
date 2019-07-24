@@ -32,11 +32,10 @@ html {
 
 body {
 	width: 65em;
-	padding: 7em 8%;
+	padding: 2em 8%;
 	box-sizing: border-box;
 	margin: 1em auto;
 	background: white;
-	box-shadow: 1px 1px 5px 2px rgba(0,0,0,.3);
 	font: 100%/1.6 'Segoe UI', Optima, 'Hiragino Kaku Gothic Pro', 'Apple Gothic', Tahoma, 'Helvetica Neue', sans-serif;
 
 	-moz-hyphens: auto;
@@ -59,7 +58,7 @@ h1, h2 {
 
 h1 {
 	margin-top: 1.2em;
-	font-size: 200%;
+	font-size: 180%;
 }
 
 h2 {
@@ -177,23 +176,23 @@ ol.timeline {
 		ol.timeline > li > .date {
 			float: left;
 			margin-left: .1em;
-			max-width: 8rem;
+			max-width: 12rem;
 			color: gray;
 			font-size: 110%;
+			
 		}
 
 		ol.timeline > li > .date ~ p {
-			margin-left: 9rem;
+			margin-left: 7rem;
+			padding-left: 4em;
 		}
 
 .note {
 	margin-top: .4em;
-	font-size: 75%;
+	font-style: italic;
+	color: #4F6128;
 }
 
-	.note a:not(:hover):not(:active) {
-		color: inherit;
-	}
 
 footer {
 	margin-top: 3em;
@@ -211,68 +210,104 @@ footer {
 <header>
 	<h1>王誉霖 <span>resume</span></h1>
 
-<a><i class="fa fa-user-circle" aria-hidden="true"></i>  出生年月：1994年6月4日                 </a>
-<a>QQ @4king               </a>
-<a href="https://github.com/4kingRAS" target="_blank">My Github               </a>
+	<a><i class="fa fa-map-marker" aria-hidden="true"></i>  海南省海口市</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<a><i class="fa fa-envelope" aria-hidden="true"></i>  邮箱：  4king4ever@gmail.com</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<a><i class="fa fa-mobile" aria-hidden="true"></i>  手机： 15251896977</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<a><i class="fa fa-qq" aria-hidden="true"></i>  QQ: 398891722</a>
 
 </header>
 
 <section id="summary">
-	<h1>Summary</h1>
-	<p>My name is YL . Wang, I’m currently pursuing a Bachelor's degree in Electrical-Engineering & Computer Science at
-		<strong><a href="https://www.wh.sdu.edu.cn/" target="_blank">ShanDong University (weihai)</a></strong>.
-		I 'm intrested in low level system, Linux, and Distribute system, Cloud Technology.
-		In the recent past, I have got a <a href="https://www.nuedc-training.com.cn/" target="_blank">National University Electronic Design Competetion First prize</a>. Happy :)
+	<h1>个人相关</h1>
+	<p>对技术有追求，不仅仅满足于实现，更追求性能与优雅。研究方向：分布式，云计算。</p>
+	<p>
+		<a><i class="fa fa-edge" aria-hidden="true"></i>  个人主页： https://4kingras.github.io</a>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<a><i class="fa fa-github" aria-hidden="true"></i>  Github：  https://github.com/4kingras</a>
 	</p>
 </section>
 
 <section id="education">
-	<h1>Education</h1>
+	<h1>教育背景</h1>
 	<ol class="timeline">
 		<li>
-			<p class="date">2016–2020 (Expected)</p>
-			<p><strong>B.Sc. in  Electrical-Engineering & Computer ScienceComputer Science</strong></p>
-			<p><a href="https://www.wh.sdu.edu.cn/" target="_blank">ShanDong University (weihai)</a></p>
+			<p class="date">2016.9 – 2020.7</p>
+			<p><strong>山东大学</strong></p>
+			<p>学院：机电与信息工程学院</p>
+			<p>专业：电子信息科学与技术 (本科)</p>
 		</li>
 	</ol>
 </section>
 
 <section id="projects">
-	<h1>My Projects</h1>
+	<h1>项目经验</h1>
 	<ol class="timeline">
 		<li>
-			<p class="date">Aug 2018</p>
-			<p><a href="https://www.nuedc-training.com.cn/" target="_blank">NUEDC (province)</a>: First Prize</p>
+			<p class="date">2019.1 – 2019.2</p>
+			<p>
+				在海航旗下IT公司实习，进行Java web开发。负责独立完成团队安排的实验性供销业务系统，从表设计，后端到前端均为独立完成。
+				项目利用Spring boot搭建了一个完整的Web程序，利用Spring Security实现权限管理。团队满意，评价很好。
+			</p>
+			<p class="note">海南易建科技股份有限公司  助理Java开发工程师（实习）</p>
+		</li>
+		<li>
+			<p class="date">2018.10 – 2018.12</p>
+			<p>
+				利用高德地图SDK开发了一个用于智能导航停车位的物联网系统，Zigbee实现停车位的经纬度上传，利用服务器调度车位信息。
+			</p>
+			<p class="note">学校科研训练</p>
+		</li>
+		<li>
+			<p class="date">2018.7</p>
+			<p>
+				电赛期间用C语言实现了一个嵌入式应用，用电容传感器实现简单手势识别。
+			</p>
+			<p class="note">全国大学生电子设计竞赛山东赛区</p>
+		</li>
+		<li>
+			<p class="date">2016 前</p>
+			<p> 
+				高中期间，用Delphi独立开发过各种SaaS型的小程序。
+			</p>
+		</li>
+	</ol>
+	<p>
+		更多我的项目情况可访问我的Github主页。
+	</p>
+</section>
+
+<section id="projects">
+	<h1>获奖情况</h1>
+	<ol class="timeline">
+		<li>
+			<p class="date">2016.9 – 2020.7</p>
+			<p>我</p>
 			<p class="note">National University Electronic Design Competetion</p>
 		</li>
 		<li>
-			<p class="date">May 2018</p>
+			<p class="date">2016.9 – 2020.7</p>
 			<p><a href="http://www.aicrobot.com/" target="_blank">AICrobot Competetion (province)</a>: Second Prize</p>
 			<p class="note">A self-design Robot skill Competetion host by ShanDong Pronvince</p>
 		</li>
 	</ol>
-	<p>More of my open source work can be found in <a href="https://github.com/4kingRAS" target="_blank">my Github account</a>.
-</p></section>
+	
+</section>
 
 <section id="technical-skills">
-	<h1>Technical skills</h1>
-	<p>I have basic experience with a wide range of programming languages and technologies, including:</p>
+	<h1>技术水平</h1>
+	<p>对各种计算机领域的技术和理论都有广泛涉猎，计算机网络，操作系统，数据库系统，计算机组成原理等基础知识扎实。</p>
 	<ul>
-		<li>Basic DataStructure &amp; Algorithm</li>
-		<li>Java / C / CPP</li>
-		<li>basically Python </li>
-		<li>OpenCV &amp; a little DL</li>
-		<li>Embedded Development</li>
-	</ul>
-	<p>I also have experience with a wide range of IT Technologies, including SQL, Photoshop and many more.</p>
-</section>
-
-<section id="languages">
-	<h1>Languages</h1>
-	<ul>
-		<li><strong>Chinese</strong>: Native</li>
-		<li><strong>English</strong>: CET-6 474 (Good at Reading)</li>
+		<li>  Java（熟练）</li>
+		<li>  C（熟练）</li>
+		<li>  Spring框架（熟练）</li>
+		<li>  分布式理论（基础）</li>
+		<li>  前端技术（基本掌握）</li>
+		<li><strong>英语</strong>: CET-6</li>
 	</ul>
 </section>
 
-</body></html>
+</body>
+</html>
