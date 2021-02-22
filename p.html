@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-	<title>王誉霖-山东大学-JAVA后端-个人简历</title>
+	<title>王誉霖-JAVA后端-个人简历</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
@@ -9,6 +9,7 @@
 /**
  * "Variables"
  */
+
 h1, h2, .date {
 	font: small-caps normal 100% 'PingFang SC',Constantia, 'Palatino Linotype', Palatino, Georgia, serif;
 }
@@ -57,7 +58,7 @@ h1, h2 {
 }
 
 h1 {
-	margin-top: 1.2em;
+	margin-top: 1em;
 	font-size: 180%;
 }
 
@@ -105,7 +106,7 @@ header {
 		color: hsl(20, 15%, 50%);
 		border-bottom: 1px solid #9BBB59;
 		margin: 0 0 .15em;
-		text-indent: 1.2em;
+		text-indent: 1em;
 		font-size: 450%;
 		line-height: 1.05;
 		font-variant: normal;
@@ -129,7 +130,7 @@ header {
 	}
 
 	header > ul > li:before {
-		content: '● ';
+		content: '*';
 	}
 
 	header > ul > li:first-child:before {
@@ -208,7 +209,7 @@ footer {
 <body>
 
 <header>
-	<h1>王誉霖 <span>resume</span></h1>
+	<h1>王誉霖 <span style="font-style: italic;">resume</span></h1>
 
 	<a><i class="fa fa-tree" aria-hidden="true"></i>  年龄：26</a>
 	&nbsp;&nbsp;&nbsp;&nbsp;
@@ -217,13 +218,14 @@ footer {
 	<a><i class="fa fa-mobile" aria-hidden="true"></i>  手机：15251896977</a>
 	&nbsp;&nbsp;&nbsp;&nbsp;
 	<a><i class="fa fa-wechat" aria-hidden="true"></i>  wechat：ras4king </a>
-
 </header>
 
 <section id="summary">
-	<h1>个人相关</h1>
-	<p>学习能力强，重视技术原理。</p>
-	<p>希望从事Java后端，云计算相关的工作。</p>
+	<h1>简介</h1>
+	<p>
+		学习能力强，重视技术原理。<br>
+		希望能从事贵司的Java后端，云服务开发相关的工作。
+	</p>
 	<p>
 		<a><i class="fa fa-edge" aria-hidden="true"></i>  个人主页：https://4kingras.github.io</a>
 		&nbsp;&nbsp;&nbsp;&nbsp;
@@ -235,7 +237,7 @@ footer {
 	<h1>教育背景</h1>
 	<ol class="timeline">
 		<li>
-			<p class="date">2016.9 – 2020.7</p>
+			<p class="date">2016.09 – 2020.07</p>
 			<p><strong>山东大学</strong></p>
 			<p>专业：电子信息科学与技术(本科) </p>
 		</li>
@@ -246,17 +248,18 @@ footer {
 	<h1>工作经验</h1>
 	<ol class="timeline">
 		<li>
-			<p class="date">2020.7 – 至今</p>
+			<p class="date">2020.07 – 至今</p>
 			<p>
-				在深圳富士康的车联网部门担任Linux应用开发工程师，主要工作内容为对车机端T-BOX的soc进行Linux平台的应用开发。
+				在深圳富士康的车联网部门担任Java应用开发工程师，参与了部门4G TBox项目及C-V2X研究项目的开发。
+				主要负责Java服务端，Android端程序，Carla仿真平台的Python二次开发等工作。
 			</p>
-			<p class="note">富士康科技集团-前瞻智行开发中心 Linux应用开发工程师</p>
+			<p class="note">富士康科技集团-FIH-前瞻智行开发中心 应用软件开发工程师</p>
 		</li>
 		<li>
-			<p class="date">2019.1 – 2019.2</p>
+			<p class="date">2019.01 – 2019.02</p>
 			<p>
 				在海航旗下上市公司实习，进行全栈式Java web开发。项目利用Spring boot + MySQL + Hibernate
-				搭建了一个仓库供销管理系统。Thymeleaf + bootstrap 构建前端页面。用spring security实现了简单的权限管理。
+				搭建了一个仓库供销管理系统，实现了仓库，订单，购物车以及简单的权限管理。
 			</p>
 			<p class="note">海南易建科技股份有限公司  助理Java开发工程师（实习）</p>
 		</li>
@@ -265,43 +268,50 @@ footer {
 	<h1>项目经验</h1>
 	<ol class="timeline">
 		<li>
-			<p class="date">2019.12 – 2020.5</p>
+			<p class="date">2020.12 – TBD</p>
+			<p class="note">C-V2X研究项目</p>
 			<p>
-				本科毕业设计项目，硬件平台为两个运行OpenWrt系统的STM32 mcu，以这两个mcu为节点，电脑作为服务端实现了一个多人聊天室系统。
-				服务端为JAVA netty开发，mcu为对OpenWrt的应用开发，主要使用lua
+				研究C-V2X车联网标准场景的预警算法，负责Python算法仿真程序开发，及相关网络配套程序的开发。
 			</p>
-			<p class="note">毕业设计 基于OpenWrt的WiFi多节点通信系统</p>
 		</li>
 		<li>
-			<p class="date">2018.5 – 2018.10</p>
+			<p class="date">2020.08 – 2020.11</p>
+			<p class="note">华创4G TBox项目</p>
 			<p>
-				学校科研训练的智能车位锁系统，本人负责安卓端app的开发，利用高德地图SDK实现导航功能，并实现了服务端与app端的通信。
+				负责为团队TBox开发服务端和手机端的配套测试工具，解决了tbox与车联网服务端的心跳机制，网络异常等问题。
 			</p>
-			<p class="note">学校科研训练 安卓平台二次开发</p>
 		</li>
+		<li>
+			<p class="date">2019.12 – 2020.05</p>
+			<p class="note">毕业设计 基于OpenWrt的WiFi多节点通信系统</p>
+			<p>
+				利用netty和lua实现Openwrt模组上的网络聊天服务器。
+			</p>
+		</li>
+	</ol>
 </section>
 
 <section id="technical-skills">
 	<h1>获奖情况 & 技术水平</h1>
 	<ol class="timeline">
 		<li>
-			<p class="date">2018.8</p>
+			<p class="date">2018.08</p>
 			<p>
 				全国大学生电子设计大赛山东赛区&nbsp;&nbsp;&nbsp;&nbsp;<strong>一等奖</strong>
 			</p>
 		</li>
 		<li>
-			<p class="date">2018.5</p>
+			<p class="date">2018.05</p>
 			<p>
 				第二届山东省大学生智能控制大赛&nbsp;&nbsp;&nbsp;&nbsp;<strong>二等奖</strong>
 			</p>
 		</li>
 	</ol>
 	<ul>
-		<li>  熟练掌握 Java，C</li>
-		<li>  数据库：mysql, memcached</li>
+		<li>  熟练 Java 了解 C, Python</li>
+		<li>  数据库：MySQL, Redis </li>
 		<li>  框架：Spring boot，netty</li>
-		<li>  基本前端技术：JQuery, JS, HTML</li>
+		<li>  基本前端技术：JQuery, JS, HTML; 有微信小程序开发经验</li>
 		<li><strong>英语</strong>: CET-6 474 听读熟练</li>
 	</ul>
 </section>
